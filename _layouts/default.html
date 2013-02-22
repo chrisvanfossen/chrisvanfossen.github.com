@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Josh Sherman</title>
-		<meta name="description" content="Hacker, Fiscal Conservative, Tattoos &amp; Expletives" />
+		<!--title>{{ site.title }}</title-->
+		<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+		<meta name="description" content="{{ site.description }}" />
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="google-site-verification" content="MRXsMFbQBPSmzagl6zWkoL2WfXqvrsF-Hp2VkdjJ-UQ" />
-		<link rel="alternate" type="application/rss+xml" title="Josh Sherman: Hacker, Fiscal Conservative, Tattoos &amp; Expletives" href="http://feeds.feedburner.com/joshtronic" />
+		<link rel="alternate" type="application/rss+xml" title="{{ site.title }}: {{ site.description }}" href="http://feeds.feedburner.com/joshtronic" />
 		<link rel="stylesheet" type="text/css" href="/css/core.css" />
 	</head>
 
