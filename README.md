@@ -6,6 +6,6 @@ This repository is automatically transformed by Jekyll into a static site whenev
 License
 -------
 
-The `_posts` directory is Copyright Josh Sherman and may not be used without my persmission.
+The `_posts` and `images` directories are Copyright Josh Sherman and may not be used without my persmission.
 
 All other directories and files are MIT Licensed.
