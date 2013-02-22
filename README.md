@@ -1,4 +1,11 @@
-blog
-====
+joshtronic.com
+==============
 
-Toying with the idea of moving my blog to github:pages so I can toy with Jekyll
+This repository is automatically transformed by Jekyll into a static site whenever I push it to GitHub.
+
+License
+-------
+
+The `_posts` directory is Copyright Josh Sherman and may not be used without my persmission.
+
+All other directories and files are MIT Licensed.
