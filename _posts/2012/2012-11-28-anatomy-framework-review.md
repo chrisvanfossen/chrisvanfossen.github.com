@@ -5,7 +5,7 @@ title:  "Review: Anatomy Framework"
 
 From the developer, [Nick Justice](https://github.com/niix):
 
-	Anatomy is a light-weight and responsive front end framework that invokes rapid development.
+> Anatomy is a light-weight and responsive front end framework that invokes rapid development.
 
 I don’t usually review anything on here, let alone a framework, but it’s also not often that I get to use something new that’s built in my backyard of Tampa, FL.
 
