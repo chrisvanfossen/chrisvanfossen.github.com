@@ -8,15 +8,18 @@ title:  joshtronic
 
 <h3>Socially Antisocial</h3>
 <a href="https://www.facebook.com/joshtronic">Facebook</a>
-&bull; <a href="https://github.com/joshtronic">GitHub</a>
-&bull; <a href="http://instagram.com/joshtronic">Instagram</a>
-&bull; <a href="https://www.linkedin.com/in/joshsherman">LinkedIn</a>
-&bull; <a href="http://joshtronic.tumblr.com/">Tumblr</a>
-&bull; <a href="https://twitter.com/joshtronic">Twitter</a>
+{{ site.delimiter }} <a href="https://github.com/joshtronic">GitHub</a>
+{{ site.delimiter }} <a href="http://instagram.com/joshtronic">Instagram</a>
+{{ site.delimiter }} <a href="https://www.linkedin.com/in/joshsherman">LinkedIn</a>
+{{ site.delimiter }} <a href="http://joshtronic.tumblr.com/">Tumblr</a>
+{{ site.delimiter }} <a href="https://twitter.com/joshtronic">Twitter</a>
 
 <h3>Blog Posts</h3>
-<ol class="posts">
+<table>
 	{% for post in site.posts %}
-		<li><time>{{ post.date | date_to_string }}</time> {{ site.delimiter }} <a href="{{ post.url }}">{{ post.title }}</a></li>
+		<tr>
+			<td class="nowrap"><time>{{ post.date | date_to_string }}</time> {{ site.delimiter }}</td>
+			<td><a href="{{ post.url }}">{{ post.title }}</a></td>
+		</tr>
 	{% endfor %}
-</ol>
+</table>

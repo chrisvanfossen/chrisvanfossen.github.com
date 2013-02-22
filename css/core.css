@@ -1,9 +1,4 @@
-*
-{
-	-moz-box-sizing:    border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing:         border-box;
-}
+*, *:after, *:before { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 body
 {
@@ -11,6 +6,7 @@ body
 	width:       1000px;
 	padding:     30px 20px;
 	margin:      0 auto;
+	color:       #333;
 }
 
 h1.home { margin-bottom: 0 }
@@ -33,12 +29,10 @@ li
 	margin-bottom: 2px;
 }
 
-/*
 p
 {
-	width: 760px;
+	line-height: 22px;
 }
-*/
 
 .avatar
 {
@@ -55,4 +49,14 @@ ul.related
 time
 {
 	font-family: monospace;
+}
+
+.nowrap
+{
+	white-space: nowrap;
+}
+
+td
+{
+	vertical-align: top;
 }
