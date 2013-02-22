@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Version Control: It doesn’t matter what system you use
+title:  "Version Control: It doesn’t matter what system you use"
 ---
 
 CVS vs SVN, SVN vs Git, Git vs Mercurial… who fucking cares. I’ve been through my share of version control systems (CVS, Visual Source Safe, SVN, Serena PVCS and Dimensions and as of late, git) and the one thing that stands out to me is that it doesn’t matter which one you use.

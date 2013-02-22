@@ -1,4 +1,17 @@
 body
 {
-	width: 760px;
+	/*width: 760px; */
+}
+
+ol.posts,
+ul.related
+{
+	list-style: none;
+	padding-left: 20px;
+}
+
+time
+{
+	color:       #999;
+	font-family: monospace;
 }

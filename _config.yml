@@ -1,4 +1,5 @@
 title:       Josh Sherman
 description: Hacker, Fiscal Conservative, Tattoos &amp; Expletives
+delimiter:   "&nbsp;"
 markdown:    rdiscount
 pygments:    true
