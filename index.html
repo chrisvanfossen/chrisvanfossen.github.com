@@ -3,9 +3,18 @@ layout: default
 title:  joshtronic
 ---
 
-<h1>{{ site.title }}</h1>
-<h2>{{ site.description }}</h2>
+<h1 class="home">{{ site.title }}</h1>
+<h2 class="home">{{ site.description }}</h2>
 
+<h3>Socially Antisocial</h3>
+<a href="https://www.facebook.com/joshtronic">Facebook</a>
+&bull; <a href="https://github.com/joshtronic">GitHub</a>
+&bull; <a href="http://instagram.com/joshtronic">Instagram</a>
+&bull; <a href="https://www.linkedin.com/in/joshsherman">LinkedIn</a>
+&bull; <a href="http://joshtronic.tumblr.com/">Tumblr</a>
+&bull; <a href="https://twitter.com/joshtronic">Twitter</a>
+
+<h3>Blog Posts</h3>
 <ol class="posts">
 	{% for post in site.posts %}
 		<li><time>{{ post.date | date_to_string }}</time> {{ site.delimiter }} <a href="{{ post.url }}">{{ post.title }}</a></li>
