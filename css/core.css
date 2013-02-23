@@ -16,23 +16,6 @@ body
 	color:       #333;
 }
 
-h1.home
-{
-	margin-bottom: 0;
-}
-
-h2.home
-{
-	margin-top:  0;
-	font-weight: normal;
-}
-
-h2.home,
-time
-{
-	color: #999;
-}
-
 a
 {
 	color: #4f88b8;
@@ -48,9 +31,11 @@ p
 	line-height: 22px;
 }
 
-time
+time,
+h4 span
 {
 	font-family: monospace;
+	font-weight: normal;
 }
 
 .nowrap
@@ -61,4 +46,49 @@ time
 td
 {
 	vertical-align: top;
+}
+
+.hide
+{
+	display: none;
+}
+
+h4
+{
+	cursor: pointer;
+}
+
+.avatar,
+header
+{
+	float: left;
+}
+
+.avatar
+{
+	margin-top:   22px;
+	margin-right: 20px;
+}
+
+header h1
+{
+	margin-bottom: 0;
+}
+
+header h2
+{
+	margin-top:  0;
+	font-weight: normal;
+}
+
+header h2,
+time,
+h4 span
+{
+	color: #999;
+}
+
+h3
+{
+	clear: both;
 }

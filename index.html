@@ -3,10 +3,14 @@ layout: default
 title:  joshtronic
 ---
 
-<h1 class="home">{{ site.title }}</h1>
-<h2 class="home">{{ site.description }}</h2>
+<img src="{{ site.avatar }}?s=64" class="avatar" />
 
-<h3>Socially Antisocial</h3>
+<header>
+	<h1>{{ site.title }}</h1>
+	<h2>{{ site.description }}</h2>
+</header>
+
+<h3 class="clear">Socially Antisocial</h3>
 <a href="https://www.facebook.com/joshtronic">Facebook</a>
 {{ site.delimiter }} <a href="https://github.com/joshtronic">GitHub</a>
 {{ site.delimiter }} <a href="http://instagram.com/joshtronic">Instagram</a>
@@ -14,12 +18,37 @@ title:  joshtronic
 {{ site.delimiter }} <a href="http://joshtronic.tumblr.com/">Tumblr</a>
 {{ site.delimiter }} <a href="https://twitter.com/joshtronic">Twitter</a>
 
+{% assign year = nil %}
 <h3>Blog Posts</h3>
-<table>
-	{% for post in site.posts %}
-		<tr class="{{ post.date | date: "%Y" }}">
-			<td class="nowrap"><time>{{ post.date | date_to_string }}</time> {{ site.delimiter }}</td>
-			<td><a href="{{ post.url }}">{{ post.title }}</a></td>
-		</tr>
-	{% endfor %}
+{% for post in site.posts %}
+	{% assign current_year = post.date | date: "%Y" %}
+	{% if year != current_year %}
+		{% if year != nil %}
+			</table>
+		{% endif %}
+		<h4 data-year="{{ post.date | date: "%Y" }}">
+			<span>{% if current_year != "2012" and current_year != "2013" %}+{% else %}-{% endif %}</span>
+			{{ current_year }}
+		</h4>
+		<table data-year="{{ post.date | date: "%Y" }}"{% if current_year != "2012" and current_year != "2013" %} class="hide"{% endif %}>
+		{% assign year = current_year %}
+	{% endif %}
+	<tr>
+		<td class="nowrap"><time>{{ post.date | date_to_string }}</time> {{ site.delimiter }}</td>
+		<td><a href="{{ post.url }}">{{ post.title }}</a></td>
+	</tr>
+{% endfor %}
 </table>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+	$(function()
+	{
+		$('h4').click(function()
+		{
+			var table = $('table[data-year="' + $(this).attr('data-year') + '"]');
+			$('span', this).html($('span', this).html() == '+' ? '-' : '+');
+			table.toggle();
+		});
+	});
+</script>
