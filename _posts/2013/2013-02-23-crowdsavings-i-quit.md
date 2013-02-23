@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  My departure from CrowdSavings.com
+title:  My departure from CrowdSavings
 ---
 
 Figured my birthday was a good day to talk about this in a public forum. Back in October I resigned my post as CTO at [CrowdSavings.com](http://crowdsavings.com) in one of the most outlandish [even for me] exits I’ve been privy to.
