@@ -1,4 +1,11 @@
-*, *:after, *:before { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+*,
+*:after,
+*:before
+{
+	-moz-box-sizing:    border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing:         border-box;
+}
 
 body
 {
@@ -9,10 +16,22 @@ body
 	color:       #333;
 }
 
-h1.home { margin-bottom: 0 }
-h2.home { margin-top:    0; font-weight: normal }
+h1.home
+{
+	margin-bottom: 0;
+}
 
-h2.home, time { color: #999 }
+h2.home
+{
+	margin-top:  0;
+	font-weight: normal;
+}
+
+h2.home,
+time
+{
+	color: #999;
+}
 
 a
 {
@@ -24,26 +43,9 @@ a:hover
 	color: #009;
 }
 
-li
-{
-	margin-bottom: 2px;
-}
-
 p
 {
 	line-height: 22px;
-}
-
-.avatar
-{
-	float: left;
-}
-
-ol.posts,
-ul.related
-{
-	list-style: none;
-	padding-left: 0;
 }
 
 time

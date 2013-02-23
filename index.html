@@ -17,7 +17,7 @@ title:  joshtronic
 <h3>Blog Posts</h3>
 <table>
 	{% for post in site.posts %}
-		<tr>
+		<tr class="{{ post.date | date: "%Y" }}">
 			<td class="nowrap"><time>{{ post.date | date_to_string }}</time> {{ site.delimiter }}</td>
 			<td><a href="{{ post.url }}">{{ post.title }}</a></td>
 		</tr>
