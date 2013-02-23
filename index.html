@@ -11,13 +11,25 @@ title:  joshtronic
 </header>
 
 <h3 class="clear">Socially Antisocial</h3>
-<a href="https://www.facebook.com/joshtronic">Facebook</a>
-{{ site.delimiter }} <a href="https://github.com/joshtronic">GitHub</a>
-{{ site.delimiter }} <a href="http://instagram.com/joshtronic">Instagram</a>
-{{ site.delimiter }} <a href="https://www.linkedin.com/in/joshsherman">LinkedIn</a>
-{{ site.delimiter }} <a href="http://steamcommunity.com/id/joshtronic">Steam</a>
-{{ site.delimiter }} <a href="http://joshtronic.tumblr.com/">Tumblr</a>
-{{ site.delimiter }} <a href="https://twitter.com/joshtronic">Twitter</a>
+<p>
+	<ul class="social">
+		<li><a href="https://www.facebook.com/joshtronic">Facebook</a></li>
+		<li>&nbsp;{{ site.delimiter }}</li>
+		<li><a href="https://github.com/joshtronic">GitHub</a></li>
+		<li>&nbsp;{{ site.delimiter }}</li>
+		<li><a href="https://plus.google.com/101157643857165190574">Google+</a></li>
+		<li>&nbsp;{{ site.delimiter }}</li>
+		<li><a href="http://instagram.com/joshtronic">Instagram</a></li>
+		<li>&nbsp;{{ site.delimiter }}</li>
+		<li><a href="https://www.linkedin.com/in/joshsherman">LinkedIn</a></li>
+		<li>&nbsp;{{ site.delimiter }}</li>
+		<li><a href="http://steamcommunity.com/id/joshtronic">Steam</a></li>
+		<li>&nbsp;{{ site.delimiter }}</li>
+		<li><a href="http://joshtronic.tumblr.com/">Tumblr</a></li>
+		<li>&nbsp;{{ site.delimiter }}</li>
+		<li><a href="https://twitter.com/joshtronic">Twitter</a></li>
+	</ul>
+</p>
 
 {% assign year = nil %}
 <h3>Blog Posts</h3>
@@ -35,7 +47,7 @@ title:  joshtronic
 		{% assign year = current_year %}
 	{% endif %}
 	<tr>
-		<td class="nowrap"><time>{{ post.date | date_to_string }}</time> {{ site.delimiter }}</td>
+		<td class="nowrap"><time>{{ post.date | date_to_string }}</time>{{ site.delimiter }}</td>
 		<td><a href="{{ post.url }}">{{ post.title }}</a></td>
 	</tr>
 {% endfor %}
