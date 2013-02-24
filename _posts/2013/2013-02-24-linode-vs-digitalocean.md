@@ -37,6 +37,10 @@ As mentioned, I did not run any benchmarks so none will be provided here (Google
 
 Both companies offer a myriad of operating system options both 32-bit and 64-bit. Linode still recommends running 32-bit while DigitalOcean doesn’t seem to give any recommendation as to which is better suited. As mentioned, I stuck with Ubuntu 12.04 LTS 32-bit just so that all of my servers were the same (I did not leave Linode, I simply moved some of my smaller sites from a Linode 512 to a 512MB Droplet just to give them a shot). One thing that struck me as peculiar is that on DigitalOcean I found myself installing packages that I don’t remember installing on Linode, specifically vim and telnet. Not a big deal, but caught me off guard as those packages aren’t part of my standard setup scripts.
 
+## Cores
+
+From what I’ve read, most reviewers have dismissed the fact that Linode offers 4 cores and DigitalOcean only offers 1. Just seems like a no brainer that there’s an advantage by having more cores especially considering that many packages do take advantage of the additional cores (nginx, fastcgi/fpm, memcached).
+
 ## Scripting
 
 Keep in mind, I don’t actually use it, but Linode offers StackScripts for automating server builds. From what I saw DigitalOcean did not have such a system, but they do have an API (as does Linode).
