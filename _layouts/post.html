@@ -3,12 +3,11 @@ layout: default
 ---
 
 <div>
-	<a href="/">&#8962; Home</a>
-	{{ site.delimiter }}
-	<time>{{ page.date | date_to_string }}</time>
+	<a href="/">&#8962; Back to Home</a>
 </div>
 
 <h1>{{ page.title }}</h1>
+<time>{{ page.date | date_to_string }}</time>
 
 {{ content }}
 
@@ -16,7 +15,7 @@ layout: default
 <table>
 	{% for post in site.related_posts limit:3 %}
 		<tr>
-			<td class="nowrap"><time>{{ post.date | date_to_string }}</time> {{ site.delimiter }}</td>
+			<td class="nowrap"><time>{{ post.date | date: "%d %b <span>%Y</span>" }}</time>{{ site.delimiter }}</td>
 			<td><a href="{{ post.url }}">{{ post.title }}</a></td>
 		</tr>
 	{% endfor %}
