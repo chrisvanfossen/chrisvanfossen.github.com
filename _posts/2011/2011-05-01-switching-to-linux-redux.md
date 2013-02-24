@@ -3,9 +3,7 @@ layout: post
 title:  Switching to Linux, you’re doing it wrong (redux)
 ---
 
-TODO: fix previous links
-
-So after the public outcry that I’m a total asshole that just immediately starts yelling “RTFM you fucking n00b” based on my [previous post](http://joshtronicblog.tumblr.com/post/16728006515/switching-to-linux-youre-doing-it-wrong), I decided to revisit each of my points and try to provide some helpful insight.
+So after the public outcry that I’m a total asshole that just immediately starts yelling “RTFM you fucking n00b” based on my [previous post](/2011/04/11/switching-to-linux/), I decided to revisit each of my points and try to provide some helpful insight.
 
 Before revisiting the points I’d like to state that the only way that questions can be answered is by actually asking them. Often times I find, folks will abandon Linux after one or two (what I consider) small snafu’s without ever lifting a finger to ask me a question about it.
 
@@ -47,4 +45,4 @@ The other option, assuming you can’t commit to Wubi, would be to simply use a 
 
 ## Rainbows, unicorns and puppy dog kisses
 
-This concludes the friendlier, nearly PC version of my [previous post](http://joshtronicblog.tumblr.com/post/16728006515/switching-to-linux-youre-doing-it-wrong). Hopefully a few folks find it helpful, if not, then read the other post, it’s far more entertaining ;)
+This concludes the friendlier, nearly PC version of my previous post. Hopefully a few folks find it helpful, if not, then read the other post, it’s far more entertaining ;)

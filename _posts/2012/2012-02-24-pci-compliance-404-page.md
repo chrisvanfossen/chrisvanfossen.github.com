@@ -3,9 +3,7 @@ layout: post
 title:  PCI Compliance and the importance of a 404 page
 ---
 
-TODO: fix previous post link.
-
-As you may remember from a [previous post](http://joshtronic.com/post/16727579403), I typically rewrite my error traffic back to / instead of having a fancy 404 page. The logic behind this is that I’d rather get my users to a page that’s functional instead of presenting them with an error page, also I’ve yet to come up with anything cute / funny / witty enough to do with a 404 page to justify using one. Generally speaking, this hasn’t been a huge issue for the user experience, but it seems to occasionally come up as a technical issue.
+As you may remember from a [previous post](/2010/12/19/always-include-a-favicon/), I typically rewrite my error traffic back to / instead of having a fancy 404 page. The logic behind this is that I’d rather get my users to a page that’s functional instead of presenting them with an error page, also I’ve yet to come up with anything cute / funny / witty enough to do with a 404 page to justify using one. Generally speaking, this hasn’t been a huge issue for the user experience, but it seems to occasionally come up as a technical issue.
 
 The latest (and hopefully last as I’m planning on always using 404 pages moving forward) issue was related to PCI Compliance. I understand the value of security especially with something like credit card information, but what I don’t get is how something so important is so fragmented in regard to what’s compliant and what’s not. Compliancy scanning seems to be a big business, but it seems no two companies scan / analyze vulnerabilities the same way.
 
