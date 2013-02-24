@@ -11,4 +11,53 @@ On the first pass, I set it up to say the letters as you type. Unfortunately thi
 
 The other big feature is the ability to run it on Linux using `espeak` (which I believe is installed by default by most distros). I’m still hunting for a better speech synthesizer for Linux as most of them that I messed around with had little quirks I wasn’t willing to deal with. `festival` has an interactive mode that is more like a scripting language than simply piping text. `flite` was the best sounding IMO but took 2-3 seconds to exit, which was intolerable. `espeak` was throwing a bunch of errors about JACK but was working in a speedy fashion, hence piping it’s output to /dev/null
 
-Not sure I’ll get to them, but some future improvements would be to log what the child is typing and the amount of time using the app (for us home school parents that have to track that sort of thing) and a question / answer mode where we can feed it a list of words and it says them and then asks you to type them in. Since my daughter’s been using this app she’s completely stopped typing in gibberish and is focusing more on the words, and that’s a good thing. And speaking of good things, [here’s the code](https://github.com/joshtronic/spell-and-speak).
+Not sure I’ll get to them, but some future improvements would be to log what the child is typing and the amount of time using the app (for us home school parents that have to track that sort of thing) and a question / answer mode where we can feed it a list of words and it says them and then asks you to type them in. Since my daughter’s been using this app she’s completely stopped typing in gibberish and is focusing more on the words, and that’s a good thing. And speaking of good things, here’s the code:
+
+	#!/bin/bash
+
+	echo "Press [CTRL+C] to exit..."; echo
+
+	os=${OSTYPE//[0-9.]/}
+
+	if [[ "$os" == "linux-gnu" ]];
+	then
+		speak="espeak -v english-us"
+	elif [[ "$os" == "darwin" ]];
+	then
+		speak="say"
+	else
+		echo "Operating system is not supported"
+		exit
+	fi
+
+	while :
+	do
+		phrase=''
+
+		# Break apart words
+		IFS=' ' read -ra chars
+		for i in "${chars[@]}"; do
+			# Break apart letters
+			j=0
+			while [ $j -lt ${#i} ];
+			do
+				$speak "${i:$j:1}" &> /dev/null
+				j=$((j+1));
+			done
+
+			$speak "$i" &> /dev/null
+
+			if [[ "$phrase" = "" ]];
+			then
+				phrase="$i"
+			else
+				phrase="$phrase $i"
+			fi
+		done
+
+		# Don't say it twice!
+		if [[ $phrase != $chars ]];
+		then
+			$speak "$phrase" &> /dev/null
+		fi
+	done
