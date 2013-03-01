@@ -55,6 +55,6 @@ Linode has a pretty strong track record of upgrading what a plan includes withou
 
 ## Conclusion
 
-From what I’ve experienced, DigitalOcean doesn’t seem like a bad option especially if you’re cost conscious on the matter. Personally, it’s too early for me to drop Linode. Even if slower, Linode is still offering a more complete and stable infraatructure which justifies the price in my eyes. I did receive 20$ in credit from DigitalOcean and am planning on sticking with them for at least the next 4 months assuming nothing catastrophic occurs.
+From what I’ve experienced, DigitalOcean doesn’t seem like a bad option especially if you’re cost conscious on the matter. Personally, it’s too early for me to drop Linode. Even if slower, Linode is still offering a more complete and stable infratructure which justifies the price in my eyes. I did receive 20$ in credit from DigitalOcean and am planning on sticking with them for at least the next 4 months assuming nothing catastrophic occurs.
 
 And just because I’m a whore, [my Linode referral code](http://www.linode.com/?r=5f682793582e82ce686747c851b998dc1f86a55b).
