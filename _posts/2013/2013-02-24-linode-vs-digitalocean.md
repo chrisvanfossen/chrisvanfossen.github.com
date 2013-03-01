@@ -41,6 +41,8 @@ Both companies offer a myriad of operating system options both 32-bit and 64-bit
 
 From what I’ve read, most reviewers have dismissed the fact that Linode offers 4 cores and DigitalOcean only offers 1. Just seems like a no brainer that there’s an advantage by having more cores especially considering that many packages do take advantage of the additional cores (nginx, fastcgi/fpm, memcached).
 
+**Amendment 03/01/2013:** I’m not sure if I missed this originally or if it was recently added, but DigitalOcean does offer plans with additional cores. I’m quite impressed as they are maxing out at 24 cores on their largest plan. Linode has always been 4 cores on all plans (and no way to add in additional cores as an extra).
+
 ## Scripting
 
 Keep in mind, I don’t actually use it, but Linode offers StackScripts for automating server builds. From what I saw DigitalOcean did not have such a system, but they do have an API (as does Linode).
