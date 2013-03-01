@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Moving from Tumblr to Jekyll (and GitHub!)
+title:  Moving from Tumblr to Jekyll (and GitHub!)
 ---
 
 As you may remember, I moved my blog (and my wife’s blog and every other site blog I have) to Tumblr. At the time, it made perfect sense. Tumblr’s platform is quite robust and they have a dedicated staff that is enhancing the system (something my own blogging platform did not have). Over the course of the past year using Tumblr, I did find myself blogging more and not focusing on what my own blogging platform lacked / needed implemented. The design of my blog was also stripped down as well. I wanted to keep the UI as minimal as possible so that I could focus on content.
