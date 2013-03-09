@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: local
 title:  joshtronic
 ---
 
@@ -31,7 +31,7 @@ title:  joshtronic
 		{% if year != nil %}
 			</table>
 		{% endif %}
-		<h4 data-year="{{ post.date | date: "%Y" }}">
+		<h4 data-year="{{ post.date | date: "%Y" }}" class="toggle">
 			<span>{% if current_year != "2013" %}+{% else %}-{% endif %}</span>
 			{{ current_year }}
 		</h4>
@@ -44,16 +44,3 @@ title:  joshtronic
 	</tr>
 {% endfor %}
 </table>
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>
-	$(function()
-	{
-		$('h4').click(function()
-		{
-			var table = $('table[data-year="' + $(this).attr('data-year') + '"]');
-			$('span', this).html($('span', this).html() == '+' ? '-' : '+');
-			table.toggle();
-		});
-	});
-</script>
