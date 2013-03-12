@@ -24,11 +24,13 @@ $(function()
 		$('body').css('background', '#aaa');
 	}
 	// Night time (invert)
-	else if (hours >= 20 || hours < 6)
+	else */ if (hours >= 20 || hours < 6)
 	{
 		$('body').css('background', '#000');
+		$('h1,h3,h4').css('color', '#888');
+		$('h2,time').css('color', '#666');
+		$('p').css('color', '#aaa');
 	}
-	*/
 
 	// Weather stuff, not in play yet
 	/*
