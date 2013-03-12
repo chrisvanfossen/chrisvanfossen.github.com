@@ -9,27 +9,66 @@ $(function()
 	});
 
 	// Updates color scheme based on time of day
-	var date  = new Date();
-	var hours = date.getHours();
+	var date    = new Date();
+	var hours   = date.getHours();
+	var minutes = date.getMinutes();
+
+	if (hours < 10)
+	{
+		hours = '0' + hours;
+	}
+
+	if (minutes < 10)
+	{
+		minutes = '0' + minutes;
+	}
+
+	var time = hours + '' + minutes;
 
 	// Dawn / Sunrise (dark to light)
-	/*
 	if (hours >= 6 && hours < 8)
 	{
-		$('body').css('background', '#ccc');
+		/*
+		paintTheSky('#333', '#888', '#666', '#aaa');
+		paintTheSky('#666', '#333', '#333', '#aaa');
+
+		if (time < 0630)
+		{
+		//	paintTheSky('#000', '#888', '#666', '#aaa');
+		}
+		else if (time < 0700)
+		{
+		}
+		else if (time < 0715)
+		{
+		}
+		else if (time < 0800)
+		{
+		}
+		*/
 	}
 	// Dusk / Sunset (light to dark)
 	else if (hours >= 18 && hours < 20)
 	{
-		$('body').css('background', '#aaa');
+		/*
+		if (time < 1830)
+		{
+		}
+		else if (time < 1900)
+		{
+		}
+		else if (time < 1930)
+		{
+		}
+		else if (time < 2000)
+		{
+		}
+		*/
 	}
 	// Night time (invert)
-	else */ if (hours >= 20 || hours < 6)
+	else if (hours >= 20 || hours < 6)
 	{
-		$('body').css('background', '#000');
-		$('h1,h3,h4').css('color', '#888');
-		$('h2,time').css('color', '#666');
-		$('p').css('color', '#aaa');
+		paintTheSky('#000', '#888', '#666', '#aaa');
 	}
 
 	// Weather stuff, not in play yet
@@ -47,3 +86,11 @@ $(function()
 	});
 	*/
 });
+
+function paintTheSky(background, heading, subheading, paragraph)
+{
+	$('body').css(    'background', background);
+	$('h1,h3,h4').css('color',      heading);
+	$('h2,time').css( 'color',      subheading);
+	$('p').css(       'color',      paragraph);
+}
