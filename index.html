@@ -1,67 +1,25 @@
 ---
-layout: local
+layout: default
 title:  joshtronic
 ---
 
-<img src="{{ site.avatar }}?s=64" class="avatar" />
-<img src="{{ site.avatar }}?s=128" class="avatar-large" />
-
-<header>
-	<h1>{{ site.title }}</h1>
-	<h2>{{ site.description }}</h2>
-</header>
-
-<h3 class="clear">Socially Antisocial</h3>
-<p class="social">
-	<span>&nbsp;</span>
-	<a href="https://www.facebook.com/joshtronic">Facebook</a>&nbsp;&nbsp;
-	<a href="https://github.com/joshtronic">GitHub</a>&nbsp;&nbsp;
-	<a href="https://plus.google.com/101157643857165190574">Google+</a>&nbsp;&nbsp;
-	<a href="http://instagram.com/joshtronic">Instagram</a>&nbsp;&nbsp;
-	<a href="https://www.linkedin.com/in/joshsherman">LinkedIn</a>&nbsp;&nbsp;
-	<a href="http://steamcommunity.com/id/joshtronic">Steam</a>&nbsp;&nbsp;
-	<a href="http://joshtronic.tumblr.com/">Tumblr</a>&nbsp;&nbsp;
-	<a href="https://twitter.com/joshtronic">Twitter</a>
-</p>
-
-{% assign year = nil %}
-<h3>Blog Posts</h3>
-{% for post in site.posts %}
-	{% assign current_year = post.date | date: "%Y" %}
-	{% if year != current_year %}
-		{% if year != nil %}
-			</table>
+<div class="home">
+	{% assign year = nil %}
+	<h1 class="hide">Blog Posts</h1>
+	{% for post in site.posts %}
+		{% assign current_year = post.date | date: "%Y" %}
+		{% if year != current_year %}
+			{% if year != nil %}
+				</table>
+			{% endif %}
+			<h2>{{ current_year }}</h2>
+			<table>
+			{% assign year = current_year %}
 		{% endif %}
-		<h4 data-year="{{ post.date | date: "%Y" }}" class="toggle">
-			<span>{% if current_year != "2013" %}+{% else %}-{% endif %}</span>
-			{{ current_year }}
-		</h4>
-		<table data-year="{{ post.date | date: "%Y" }}"{% if current_year != "2013" %} class="hide"{% endif %}>
-		{% assign year = current_year %}
-	{% endif %}
-	<tr>
-		<td class="nowrap"><time>{{ post.date | date: "%d %b <span>%Y</span>" }}</time>{{ site.delimiter }}</td>
-		<td><a href="{{ post.url }}">{{ post.title }}</a></td>
-	</tr>
-{% endfor %}
-</table>
-
-<h3>Subscribe</h3>
-<form name="FeedBlitz_928bb9dca07311e2aedc00259077114b" style="display:inline" method="POST" action="http://www.feedblitz.com/f/f.fbz?AddNewUserDirect">
-	By email:
-	<input style="display:none" name="EMAIL" maxlength="64" type="text" size="25" value="" placeholder="Enter your email">
-	<input name="EMAIL_" maxlength="64" type="hidden" size="25" value="">
-	<input name="EMAIL_ADDRESS" maxlength="64" type="hidden" size="25" value="">
-	<input name="FEEDID" type="hidden" value="892322">
-	<input name="PUBLISHER" type="hidden" value="32862926">
-	<input type="button" value="Subscribe" onClick="FeedBlitz_928bb9dca07311e2aedc00259077114bs(this.form);">
-</form>
-<script>function FeedBlitz_928bb9dca07311e2aedc00259077114bi(){var x=document.getElementsByName('FeedBlitz_928bb9dca07311e2aedc00259077114b');for(i=0;i<x.length;i++){x[i].EMAIL.style.display='inline'; x[i].action='http://www.feedblitz.com/f/f.fbz?AddNewUserDirect';}} function FeedBlitz_928bb9dca07311e2aedc00259077114bs(v){v.submit();}FeedBlitz_928bb9dca07311e2aedc00259077114bi();</script>
-
-<br><br>
-
-<!-- AddThis Button BEGIN -->
-<a href="http://www.addthis.com/feed.php?h1=http%3A%2F%2Ffeeds.feedblitz.com%2Fjoshtronic&amp;x=1"><img src="http://s7.addthis.com/static/btn/v2/lg-rss-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a>
-<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4dcc6b6c6c8b799e"></script>
-<!-- AddThis Button END -->
+		<tr>
+			<td class="nowrap"><time>{{ post.date | date: "%b %d" }}</time>{{ site.delimiter }}</td>
+			<td><a href="{{ post.url }}">{{ post.title }}</a></td>
+		</tr>
+	{% endfor %}
+	</table>
+</div>
