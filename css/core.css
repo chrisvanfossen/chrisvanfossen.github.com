@@ -168,9 +168,16 @@ p
 	line-height: 22px;
 }
 
+pre,
 code
 {
 	background: #fdfdfd;
+}
+
+pre
+{
+	padding: 20px;
+	line-height: 1.4;
 }
 
 time,
