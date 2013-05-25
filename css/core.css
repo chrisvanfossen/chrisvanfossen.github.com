@@ -97,6 +97,12 @@ aside .title
 	border-color: #daeeee;
 }
 
+.social-wrapper
+{
+	width: 300px;
+	margin: 0 auto;
+}
+
 .social
 {
 	margin-left:  6px;
@@ -254,18 +260,25 @@ h3
 	body
 	{
 		overflow-x: hidden;
+		padding: 0;
 	}
 
 	body,
-	#main
+	#main,
+	aside
 	{
-		width: 360px;
-		margin: 0;
+		width: 100%;
+	}
+
+	#main,
+	aside
+	{
+		padding: 10px;
 	}
 
 	#main
 	{
-		font-size: 0.8em;
+		font-size: 0.9em;
 	}
 
 	aside
