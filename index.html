@@ -12,7 +12,7 @@ title:  joshtronic
 			{% if year != nil %}
 				</table>
 			{% endif %}
-			<h2>{{ current_year }}</h2>
+			<h2{% if year == nil %} class="top"{% endif %}>{{ current_year }}</h2>
 			<table>
 			{% assign year = current_year %}
 		{% endif %}

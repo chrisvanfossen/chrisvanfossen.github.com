@@ -7,6 +7,14 @@
 	box-sizing:         border-box;
 }
 
+*
+{
+	-moz-transition:    all 0.2s ease-out;
+	-o-transition:      all 0.2s ease-out;
+	-webkit-transition: all 0.2s ease-out;
+	transition:         all 0.2s ease-out;
+}
+
 html,
 body,
 aside
@@ -27,7 +35,8 @@ body
 	position:    relative;
 }
 
-#main, aside
+#main,
+aside
 {
 	min-height: 100%;
 	padding: 20px 30px 50px;
@@ -36,6 +45,11 @@ body
 #main
 {
 	margin-right: 360px;
+}
+
+h2.top
+{
+	margin-top: 0;
 }
 
 #main,
@@ -51,34 +65,22 @@ aside
 	right:    0;
 	bottom:   0;
 	width:    360px;
-}
-
-.prefix,
-.tagline
-{
-	color: #777;
-}
-
-.prefix
-{
-	font-size: 12px;
-	margin-left: 20px;
+	text-align: center;
 }
 
 aside .title
 {
 	font-weight: bold;
-	font-size:   42px;
+	font-size:   2.2em;
 	text-shadow: 1px 1px 0 #f0f8f9;
-	margin-top: -6px;
-	text-align: center;
+	margin-top:  -6px;
+	text-align:  center;
 }
 
 .tagline
 {
+	color:      #777;
 	font-style: italic;
-	font-size: 18px;
-	text-align: right;
 }
 
 .divider
@@ -247,98 +249,30 @@ h3
 	margin-top: 40px;
 }
 
-/*
-@media only screen and (min-width: 1824px)
-{
-	*
-	{
-		-moz-transition:    all 0.2s ease-out;
-		-o-transition:      all 0.2s ease-out;
-		-webkit-transition: all 0.2s ease-out;
-		transition:         all 0.2s ease-out;
-	}
-
-	body
-	{
-		width:       2000px;
-		font-size:   2em;
-	}
-
-	.avatar
-	{
-		display: none;
-	}
-
-	.avatar-large
-	{
-		display: inline;
-	}
-
-	p
-	{
-		line-height: 1.2;
-	}
-}
-
-@media only screen and (max-width: 1040px)
-{
-	*
-	{
-		-moz-transition:    all 0.2s ease-out;
-		-o-transition:      all 0.2s ease-out;
-		-webkit-transition: all 0.2s ease-out;
-		transition:         all 0.2s ease-out;
-	}
-
-	body
-	{
-		padding: 10px;
-		width:   100%;
-	}
-
-	.avatar
-	{
-		display: none;
-	}
-}
-
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px)
 {
-	*
+	body,
+	#main
 	{
-		-moz-transition:    all 0.2s ease-out;
-		-o-transition:      all 0.2s ease-out;
-		-webkit-transition: all 0.2s ease-out;
-		transition:         all 0.2s ease-out;
+		width: 360px;
 	}
 
+	#main
 	{
-		-moz-transition:    all 0.2s ease-out;
-		-o-transition:      all 0.2s ease-out;
-		-webkit-transition: all 0.2s ease-out;
-		transition:         all 0.2s ease-out;
-	}
-	body
-	{
-		padding: 10px;
-		width:   100%;
+		font-size: 0.8em;
 	}
 
-	h3,
-	h4,
-	.social
+	aside
 	{
-		text-align: center;
+		position:   relative;
+		display:    inline-block;
+		height:     auto;
+		min-height: 0;
 	}
 
-	time span
+	.avatar
 	{
-		display: none;
-	}
-
-	.social span
-	{
-		display: inline;
+		height: 84px;
+		width: 84px;
 	}
 }
-*/
