@@ -57,10 +57,10 @@ One of my favorite scenarios for using Redis is when creating a leaderboard / to
 	$redis->zRevRange('scores', 0, 9, array('withscores' => true));
 
 	// To pull a user’s high score
-	$redis->zScore(100);
+	$redis->zScore('scores', 100);
 
-	// To determine a user’s rank
-	$redis->zRank(100);
+	// To determine a user’s rank (+1 to make it human readable)
+	$redis->zRevRank('scores', 100);
 
 There’s not much to it and of course it’s fast and can be persistent. If you’re keeping track of something like the number of times a user’s profile has been viewed (in relation to other user’s profiles), you could use `zIncrBy` to increment the score during each view of the profile.
 
