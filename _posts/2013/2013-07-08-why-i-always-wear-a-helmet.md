@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Why I wear a helmet
+title:  Why I always wear a helmet
 ---
 
 When I first starting biking as my primary mode of transportation to my office I felt like I was wearing a helmet mainly because I hadn’t rode a bike in something like 15 years. It’s true what they say, you never forget how to ride a bike (barring a debilitating injury) but after such a long time, I definitely wasn’t as confident as when I was a kid. Fast forward to over 6 months of biking at least a couple of times a week, more recently 4 to 5 days a week. I’m not not quite to the point that [I take it off any sweet jumps](http://www.youtube.com/watch?v=I2iUQqp-zU8) or anything, but I’m not nearly as concerned with busting ass as I was back in November. Full disclosure, I did fall in my driveway a while back, skinned my knee and everything **DANG!** Okay, so even now that I got my confidence back and all that, I still wear a helmet every time I ride, even if my destination is just 2 blocks up the road. Why? BECAUSE THE WORLD IS FULL OF TERRIBLE PEOPLE. Let me elaborate on some scenarios that I’ve encountered, some of them as recently as this morning.
@@ -37,6 +37,10 @@ I hate this one because it generally happens on roads without bike lanes and a h
 
 I touched on it previously but since I was just on the topic of riding on roads without a bike lane this came to mind. Often times when I’m sitting at a stop sign waiting for a lull in traffic so I can get on my way, someone will go around me to get to the stop sign. This is what led to me taking the lane at stop signs. Fact is, I’m supposed to stop at a stop sign just like you are. I do so and wait for a good time to go again, JUST LIKE YOU. Taking the lane is often just a way to cockblock someone from being a jerk.
 
+## Bus drivers evidently have the right of way
+
+This is a bit of a late day amendment as this happened for the first time on my way home today. So, I’m not sure if this is the case in other cities or states, but in my part of Seminole Heights in Tampa, Florida the bike lane is shared with the buses. The lane itself has the typical bike lane graphics but then periodically (at the bus stops) the lane is wider and it says “Buses Only”. Today I had a bus speed around me and cut me off to get to the bus stop only to stop immediately when it got there. I’m really unsure of what the legality of the lane is, but having a huge vehicle speed past you and then immediately cut you off AND STOP is terrifying. I’m not sure what the city planner was on when they made that decision but it was a terrible one. I get it, it’s one lane and giving the bus some room helps to keep traffic from being stopped and backed up, but to give bus drivers (which I already consider horrible drivers) a free pass to run over bike riders is completely unacceptable.
+
 ## So do you even like commuting via bicycle?
 
-Don’t let all the negativity fool you, I absolutely love it. I’ve been able to save a ton of money on gas, I get to feel like I’m a bit more environmentally conscious than I used to be and hell, biking has contributed a ton to my own fitness level. Ideally I’ll be a bike commuter for as long as I’m able.
+Don’t let all the negativity fool you, I absolutely love it. I’ve been able to save a ton of money on gas, I get to feel like I’m a bit more environmentally conscious than I used to be and hell, biking has contributed a ton to my own fitness level. Ideally I’ll be a bike commuter for as long as I’m able. Do you bike to work? I would love to hear about your trials and tribulations.
