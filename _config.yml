@@ -8,4 +8,4 @@ markdown:    rdiscount
 permalink:   pretty
 pygments:    true
 username:    joshtronic
-future:      true
+future:      false
