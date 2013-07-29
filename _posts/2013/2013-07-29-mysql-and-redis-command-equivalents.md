@@ -3,7 +3,7 @@ layout: post
 title:  MySQL and Redis Command Equivalents
 ---
 
-[Score another one for HitTail](/2013/06/10/hittail-review/) as this particular post topic was their suggestion. MySQL (PostgreSQL, SQL Server, SQLite or any other RDBMS I didn’t list) and Redis are completely different beasts in regard to syntax and especially schema design. The following are just some common SQL statements and how you could accomplish the same with Redis (or vice versa). For these examples I’m going to work with a table called users in our database and a hash as well as some keys in our Redis equivalent.
+[Score another one for HitTail](/2013/06/10/hittail-review/) as this particular topic was their suggestion. MySQL (PostgreSQL, SQL Server, SQLite or any other RDBMS I didn’t list) and Redis are completely different beasts in regard to syntax and especially schema design (or lack there of). The following are just some common SQL statements and how you could accomplish the same with Redis (or vice versa). For these examples I’m going to work with a table called `users` in our imaginary database and a hash as well as some keys and sorted sets in our Redis equivalent.
 
 ## The Schema
 
@@ -36,7 +36,7 @@ Right out of the gate, a major difference between the two is that Redis is schem
 
 ### Redis
 
-Because Redis is a key-value store, we will have to maintain some additional keys for stuff like an auto-increment field and any indexes (in this case the username field) and for good measure a sorted set to store our created at and updated at values. I’d love to show you how to do this in pure Redis but that would require Lua scripts and I think that would over complicate this a bit. The following Redis examples will use `[phpredis](http://phpave.com/installing-php-redis-a-php-extension-for-redis/) but should be easy to port to another language. Additionally, you could pipeline the Redis commands but I am keeping them broken apart for simplicities sake.
+Because Redis is a key-value store, we will have to maintain some additional keys for stuff like an auto-increment field and any indexes (in this case the username field) and for good measure a couple of sorted sets to store our created at and updated at values. I’d love to show you how to do this in pure Redis but that would require Lua scripts and I think that would over complicate this a bit. The following Redis examples will use `[phpredis](http://phpave.com/installing-php-redis-a-php-extension-for-redis/) but should be easy to port to another language. Additionally, you could pipeline the Redis commands but I am keeping them broken apart for simplicities sake.
 
 	$user_id = $redis->incr('user:id');
 	$redis->hmset('user:' . $user_id, 'username', 'josh', 'about', 'i love to code');
@@ -82,7 +82,7 @@ That extra key we set when creating the records acts as an index by allowing us 
 
 ### MySQL
 
-	UPDATE `users` SET `username` = 'elizabeth' WHERE id = 3;
+	UPDATE `users` SET `username` = 'elizabeth', `updated_at` = NOW() WHERE id = 3;
 
 ### Redis
 
