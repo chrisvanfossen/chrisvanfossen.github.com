@@ -64,6 +64,7 @@ One of my favorite scenarios for using Redis is when creating a leaderboard / to
 
 There’s not much to it and of course it’s fast and can be persistent. If you’re keeping track of something like the number of times a user’s profile has been viewed (in relation to other user’s profiles), you could use `zIncrBy` to increment the score during each view of the profile.
 
+<a name="queues"></a>
 ## Queues
 
 Because of the awesome data types that Redis has, building queues is a very common use case. You could use the sorted set like we did above and set the score to the timestamp of the event or you could use the list type, which is ordered based on when and where you added the data. I generally use lists for the queues I’ve built.
