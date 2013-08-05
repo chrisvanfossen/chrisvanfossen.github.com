@@ -21,7 +21,7 @@ The most notable advancement recently has been that Linode doubled the storage s
 		<td class="center green bold">2GB</td>
 	</tr>
 	<tr>
-		<th>Cores</th>
+		<th>CPU Cores</th>
 		<td class="center green bold">8 (1x priority)</td>
 		<td class="center">1</td>
 	</tr>
@@ -51,7 +51,7 @@ The most notable advancement recently has been that Linode doubled the storage s
 		<td class="center green bold">4GB</td>
 	</tr>
 	<tr>
-		<th>Cores</th>
+		<th>CPU Cores</th>
 		<td class="center green bold">8 (2x priority)</td>
 		<td class="center">2</td>
 	</tr>
