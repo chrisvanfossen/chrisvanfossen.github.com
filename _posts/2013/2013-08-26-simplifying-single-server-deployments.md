@@ -22,7 +22,7 @@ To use it I simply run `deploy mysite.com` and voilà! the latest code in `maste
 
 As mentioned earlier, I usually only deploy production sites from `master` but recently I started running a staging copy of a site to help aid in testing against production code without fully deploying to the production site. To accomplish this, I ended up adding a couple of extra lines so that I could pass in an alternate branch name:
 
-#!/bin/bash
+	#!/bin/bash
 
 	if [[ -z "$2" ]];
 	then
