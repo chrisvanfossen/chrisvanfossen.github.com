@@ -9,7 +9,7 @@ Last week I discussed [the importance of version control for individuals](/2013/
 
 Let’s fast forward to today, where at my current scale I can make it work with a pretty stacked single bare metal server. Being back down to a single server removed the need for distribution so I was able to ditch my old deploy script entirely. Now this old script I speak of was custom for my main group of social networks and not for all of my sites. The rest of my sites, I would SSH out and pull down the latest code from `master`. My goal was to create a script that I could use to deploy any of my sites with zero configuration. The big advantage to getting this done is that I always* checkout `master` to `/var/www/mysite.com` where `mysite.com` is the name of the repository. I check it out so that if I ever have to make a production hotfix, I can just check it back in and push it upstream.
 
-* Maybe not always, recently I started deploying to a staging environment, more on that below.
+\* Maybe not always, recently I started deploying to a staging environment, more on that below.
 
 In regard to checking out code from `git`, I don’t use any deploy keys but I do leverage [ssh-agent forwarding](https://help.github.com/articles/using-ssh-agent-forwarding). This keeps things very simple, especially considering it’s just me deploying. Basically my local key gets used to authenticate me on the server and gets passed in and used when pulling down code from GitHub. Please note that my new script does require that you have `PubkeyAuthentication` enabled, configured and your public key(s) out on the server.
 
