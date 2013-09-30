@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  LinkedIn Endorsement are Nonsense
+title:  LinkedIn Endorsements are Nonsense
 ---
 
 Recently a former coworker of mine sent out an email to her LinkedIn network pleading with us to leave her a thoughtful recommendation instead of just endorsing her for skills. Unfortunately, I never worked directly with her at the job (albeit part of the same department) and never really interacted with her much overall, so I didn’t really know what I could write for a recommendation. But she did revive my thought that the endorsements on LinkedIn are in fact total and complete bullshit.
