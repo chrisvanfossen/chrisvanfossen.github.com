@@ -1,0 +1,26 @@
+---
+layout: post
+title:  Temporary `ufw` rules or How I learned to stop scripting and love the shell
+---
+
+This post was originally planned to be a social commentary on the potential for riots this coming Novemeber (a/k/a The 2013 Food Stamp Riots a/k/a The Backlash of the Entitlement Society) but that seemed like such a fucking downer. Then the post was supposed to be about a Python script I wrote last week to allow for `ufw` rules to be applied on a temporary basis. About mid-post I realized that I had overlooked some things and was able to rewrite said Python script in bash and accomplish nearly all of the functionality in about 7% of the coding.
+
+So let’s start with my new project, `tmpufw` (translation, Temporary Uncomplicated Firewall). If you’re not familiar with `ufw` it’s just a simplified wrapper for `iptables`. Makes it simple, so I prefer it. The dilemma I wanted to accomplish was being able to temporarily apply rules to `ufw`, specifically IP bans of undesireable users on our sites. I’m fully aware of how futile IP banning can be considering how easy it can be to spoof or simply obtain a new IP. As futile as it can be, it can still be quite effective a lot of the time.
+
+The caveat I have found is that over time, permanently banning a single IP address can cause some issues. The major issue is with the IP addresses issued to cell phones / other cellular devices. They change quite frequently and have a high level of reuse which can cause inadvertent bans to take place when someone from the same city / same carrier obtains a previously banned IP address. To combat this, I decided the best bet would be to temporarily ban IP addresses for a period of time (30 to 45 days or so seems reasonable).
+
+`ufw` and `iptables` didn’t have any options for expiring rules, and my attempts to use `fail2ban` to manually ban an IP for a period of time ended up fruitless (I’m still somewhat convinced that it can be done). This is where my mid-post epiphany steps in. While doing some additional research while posting this blog, I came across this answer on [Server Fault](http://serverfault.com/questions/273324/how-to-make-iptables-rules-expire) which highlighted the use of the `at` command.
+
+Why was my Google-fu so off last week while researching? Probably because I was searching for how to make `ufw` expire rules and not `iptables` explicitly. The same logic in that answer can be applied as it’s not command specific. Now the truly humbling part is the fact that I had no idea about the `at` command. I do consider myself pretty apt on the CLI (I’m a die hard `vim` user and spend the bulk of my day in `iTerm`) but this opened my eyes to how little I put into expanding my knowledge of the it. It reminded me of something I read on [Joe Stump](http://stu.mp/2012/10/my-patent-pending-3-question-technical-interview.html)’s blog last year and failed to execute this year as I wanted to:
+
+> **What is the -i option on grep used for?**
+>
+> I probably use grep a 100 times a day when I’m doing full-time development. Particularly when I’ve put my DevOps hat on. When I was in college I made myself read one man page a day on all of the major Gnu/Unix command line tools. Want to know what the flags on wc are for? Or how to scp a directory? I know this off the top of my head and I expect seasoned developers to as well. If you don’t know what the -i option on grep means, it likely means you’ve not committed yourself to ninja level status on the Unix command line. The pass rate on this question is also abysmal. Maybe 20-30%
+
+So that’s my not quite New Year’s resolution, to elevate my CLI-fu to epic proportions. Fortunately, it made me feel better that it seems like most of my circle of friends didn’t know about it either. Maybe I need new friends, just kidding, LOL, but seriously ;)
+
+Okay, so let me proceed with my (now less than) ideal solution. I decided to write a simple Python script that would allow me to pass in a rule, apply it with `ufw` and then add it to a file with the expiration time. This file can then later be parsed via a cronjob to clear out the expired rules. Simple enough and I hadn’t written anything in Python in a little while, so it was a bit of a fun little challange as well.
+
+That was last week’s accomplishment, which weighed in at 163 decently commented lines of not the most Pythonic Python script. This morning I went ahead and wrote a `bash` version which was a meager 12 lines. In defense of the Python version, the `bash` version is actually a bit more limited. The Python version allows you to specify the time to apply the rule whereas the `bash` version makes the assumption of 1 month. The `--status` argument is also dropped from the `bash` version because you can simply use `atq`. Even if I added in the ability to set the time, I’m certain the `bash` version would still weigh in pretty light in comparison.
+
+Both versions accomplish my goal and I definitely don’t feel like I wasted my time writing it in Python. If nothing else, the whole exercise opened my eyes to how I could be improving my skills on the command-line. Humbling, but worth it. If you’re interested in either the Python or `bash` version of `tmpufw` you can check it out on [GitHub](https://github.com/joshtronic/tmpufw).
