@@ -8,3 +8,11 @@ Didn’t see any news about it this AM but it seems that DirectNIC may have been
 <img src="/images/directnic-compromised.png" width="100%" alt="Fraudulent Ping">
 
 If you use DirectNIC, I’d check your credit card you have on file immediately!
+
+<hr>
+
+## Follow Up
+
+Michael Ward, COO of DirectNIC reached out to me via email. Evidently the ghost transaction is “due to a process change that we [DirectNIC] are in the middle of implementing with our new payment processor. The switch to our new provider required a pre-authorization charge of $0.00 just to ensure the card is still valid.”
+
+Crisis averted!
