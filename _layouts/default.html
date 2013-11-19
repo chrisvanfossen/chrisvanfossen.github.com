@@ -2,20 +2,29 @@
 <html>
 	<head>
 		<title>{% if page.title != site.username %}{{ page.title }} &middot; {{ site.title }}{% else %}{{ site.title }} &middot; {{ site.description }}{% endif %}</title>
-		<meta name="description" content="{{ site.description }}">
+		<meta charset="utf-8">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-		<meta name="google-site-verification" content="MRXsMFbQBPSmzagl6zWkoL2WfXqvrsF-Hp2VkdjJ-UQ">
-		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<meta name="google-site-verification" content="jV6zruij1oA7kLgngytxiVNNGuYUuFVreOsfQUdsvgs">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="{{ site.description }}">
 		<link rel="shortcut icon" href="{{ site.avatar }}?s=16">
 		<link rel="alternate" type="application/atom+xml" href="http://feeds.feedblitz.com/joshtronic&x=1" title="{{ site.title }}: {{ site.description }}">
-
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merriweather:400,700,300">
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.2/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="/css/core.css">
 	</head>
 
 	<body>
-		<aside>
+		<header>
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/">Joshua Sherman</a>
+				</div>
+			</nav>
+		</header>
+		{{ content }}
+
+
+		<!--aside>
 			<div class="title">{{ site.title }}</div>
 			<div class="tagline">{{ site.description }}</div>
 
@@ -67,60 +76,43 @@
 			</form>
 			<script>function FeedBlitz_928bb9dca07311e2aedc00259077114bi(){var x=document.getElementsByName('FeedBlitz_928bb9dca07311e2aedc00259077114b');for(i=0;i<x.length;i++){x[i].EMAIL.style.display='inline'; x[i].action='http://www.feedblitz.com/f/f.fbz?AddNewUserDirect';}} function FeedBlitz_928bb9dca07311e2aedc00259077114bs(v){v.submit();}FeedBlitz_928bb9dca07311e2aedc00259077114bi();</script>
 
-			<!-- AddThis Button BEGIN -->
 			<a href="http://www.addthis.com/feed.php?h1=http%3A%2F%2Ffeeds.feedblitz.com%2Fjoshtronic&amp;x=1"><img src="http://s7.addthis.com/static/btn/v2/lg-rss-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a>
 			<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
 			<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4dcc6b6c6c8b799e"></script>
-			<!-- AddThis Button END -->
 
 			<br>
 			<div class="divider"></div>
-
-			<div class="ad ad-medium-rectangle">
-				<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-				<ins class="adsbygoogle"
-					 style="display:inline-block;width:300px;height:250px"
-					 data-ad-client="ca-pub-8033699200031717"
-					 data-ad-slot="3236346292"></ins>
-				<script>
-				(adsbygoogle = window.adsbygoogle || []).push({});
-				</script>
-			</div>
-			<br>
-
-			<div class="ad ad-medium-rectangle">
-				<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-				<ins class="adsbygoogle"
-					 style="display:inline-block;width:300px;height:250px"
-					 data-ad-client="ca-pub-8033699200031717"
-					 data-ad-slot="3236346292"></ins>
-				<script>
-				(adsbygoogle = window.adsbygoogle || []).push({});
-				</script>
-			</div>
-			<br>
-
-			<div class="ad ad-medium-rectangle">
-				<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-				<ins class="adsbygoogle"
-					 style="display:inline-block;width:300px;height:250px"
-					 data-ad-client="ca-pub-8033699200031717"
-					 data-ad-slot="3236346292"></ins>
-				<script>
-				(adsbygoogle = window.adsbygoogle || []).push({});
-				</script>
-			</div>
 
 			<div class="divider"></div>
 
 			<a href="/privacy">Privacy Policy</a>
-		</aside>
+		</aside-->
 
-		<div id="main">
+		<!-- div id="main">
 			{{ content }}
-		</div>
+		</div-->
 
-		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.2/js/bootstrap.min.js"></script>
+		<script>
+			$(document).ready(function()
+			{
+				$('.year').on('click', function()
+				{
+					var is_active = $(this).hasClass('year-active');
+					var year      = $(this).data('year');
+
+					$('.year').removeClass('year-active').removeClass('year-inactive');
+
+					if (!is_active)
+					{
+						$(this).addClass('year-active');
+						$('.posts-' + year).addClass('year-active');
+						$('.year:not(.year-active)').addClass('year-inactive');
+					}
+				});
+			});
+		</script>
 		<script>
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-2119050-11']);
