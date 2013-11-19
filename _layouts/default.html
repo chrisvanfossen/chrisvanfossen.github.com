@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>{% if page.title != site.username %}{{ page.title }} &middot; {{ site.title }}{% else %}{{ site.title }} &middot; {{ site.description }}{% endif %}</title>
+		<title>{% if page.title != site.username %}{{ page.title }} by {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 		<meta charset="utf-8">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,57 +11,21 @@
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merriweather:400,700,300">
 		<link rel="stylesheet" type="text/css" href="/css/core.css">
 	</head>
-
-	<body>
-		<header>
-			<div>
-				<h1>Hello, my name is <span>Joshua Sherman</span></h1>
-				<p>and I am a full stack hacker with a passion for building tools that bring people together.</p>
-				<p>Husband, father and the Founder &amp; Chief Alchemist of <a href="http://gravityblvd.com" target="_blank">Gravity Boulevard</a>.</p>
-			</div>
-		</header>
+	<body{% if page.title == site.username %} class="home"{% endif %}>
+		{% if page.title == site.username %}
+			<header>
+				<div>
+					<h1>Hello, my name is <span>Joshua Sherman</span></h1>
+					<p>I am a <strong>full stack hacker</strong> with a <strong>passion</strong> for building tools that <strong>bring people together</strong></p>
+					<p>Husband, father and the Chief Alchemist &amp; Founder of <a href="http://gravityblvd.com" target="_blank">Gravity Boulevard</a></p>
+				</div>
+			</header>
+		{% else %}
+			<div class="header-bar"></div>
+		{% endif %}
 		{{ content }}
 
-
 		<!--aside>
-			<div class="title">{{ site.title }}</div>
-			<div class="tagline">{{ site.description }}</div>
-
-			<div class="divider"></div>
-
-			<h4>Socially Antisocial</h4>
-
-			<div class="social-wrapper">
-				<ul class="social">
-					<li><a target="_blank" href="https://www.facebook.com/joshtronic" title="Facebook">
-						<i class="facebook"></i>
-					</a></li>
-					<li><a target="_blank" href="https://github.com/joshtronic" title="GitHub">
-						<i class="github"></i>
-					</a></li>
-					<li><a target="_blank" href="https://plus.google.com/101157643857165190574" title="Google+">
-						<i class="google"></i>
-					</a></li>
-					<li><a target="_blank" href="http://instagram.com/joshtronic" title="Instagram">
-						<i class="instagram"></i>
-					</a></li>
-					<li><a target="_blank" href="https://www.linkedin.com/in/joshsherman" title="LinkedIn">
-						<i class="linkedin"></i>
-					</a></li>
-					<li><a target="_blank" href="http://steamcommunity.com/id/joshtronic" title="Steam">
-						<i class="steam"></i>
-					</a></li>
-					<li><a target="_blank" href="http://joshtronic.tumblr.com/" title="Tumblr">
-						<i class="tumblr"></i>
-					</a></li>
-					<li><a target="_blank" href="https://twitter.com/joshtronic" title="Twitter">
-						<i class="twitter"></i>
-					</a></li>
-				</ul>
-			</div>
-
-			<br>
-			<div class="divider"></div>
 
 			<h4>Subscribe to Updates</h4>
 
@@ -79,12 +43,6 @@
 			<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
 			<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4dcc6b6c6c8b799e"></script>
 
-			<br>
-			<div class="divider"></div>
-
-			<div class="divider"></div>
-
-			<a href="/privacy">Privacy Policy</a>
 		</aside-->
 
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>

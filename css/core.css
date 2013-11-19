@@ -5,12 +5,12 @@
 	box-sizing: border-box;
 }
 
-*
+html,
+article,
+body,
+.header-bar
 {
-	-webkit-transition: all .2s ease-in-out;
-	-moz-transition: all .2s ease-in-out;
-	-o-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
+	width: 100%;
 }
 
 body
@@ -30,6 +30,9 @@ a:hover
 	background-color: #fff4cc;
 }
 
+article h1,
+article h2,
+article p a,
 h2,
 .year h2,
 .year h3
@@ -46,37 +49,55 @@ header h1,
 }
 
 header,
+header a,
 .year h2
 {
 	color: #fff;
 }
 
-header,
+header div,
+.header-bar,
 .years
 {
-	background-color: #000;
+	background-color: #222;
+}
+
+header div,
+.year h2,
+.year li
+{
+	padding: 20px;
 }
 
 header div
 {
-	background-color: #222;
 	text-align: center;
-	padding: 20px;
+	font-weight: 300;
 }
 
-header h1 span
+header h1
 {
 	color: #f96436;
 }
 
-header a
+header strong
 {
-	color: #999;
+	color: #d4f033;
 }
 
+header a:hover
+{
+	background: transparent;
+	color: #fff;
+}
+
+article h1,
+article h2,
+article h3,
+.close:after,
+time,
 .year h2,
-.year h3,
-.year time
+.year h3
 {
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -86,12 +107,6 @@ header a
 	color: #fff;
 	cursor: pointer;
 	font-size: 60px;
-}
-
-.year h2,
-.year li
-{
-	padding: 20px;
 }
 
 .year-2013 h2 { background-color: #19538c; }
@@ -113,7 +128,7 @@ header a
 .year li:nth-child(even) { background-color: #ddd; }
 .year li:nth-child(odd)  { background-color: #eee; }
 
-.year time
+time
 {
 	color: #999;
 	display: block;
@@ -131,6 +146,10 @@ header a
 {
 	font-size: 24px;
 	line-height: 28px;
+}
+
+.year h3
+{
 	margin: 6px 0 0;
 }
 
@@ -150,9 +169,132 @@ header a
 	opacity: 0.5;
 }
 
+.header-bar
+{
+	display: block;
+	height: 10px;
+	position: fixed;
+}
+
+article
+{
+	margin: 0 auto;
+	max-width: 900px;
+	padding: 100px 50px;
+}
+
+article h1,
+article h2
+{
+	color: #222;
+}
+
+article h1
+{
+	font-size: 32px;
+	margin: 0 0 30px 0;
+}
+
+article p
+{
+	color: #333;
+	font-size: 18px;
+	font-weight: 200;
+	line-height: 1.8;
+	margin: 30px 0;
+}
+
+article p a
+{
+	color: #4a94db;
+}
+
+.close
+{
+	background-color: #ccc;
+	-webkit-border-radius: 50% 0 50% 50%;
+	-moz-border-radius: 50% 0 50% 50%;
+	border-radius: 50% 0 50% 50%;
+	color: #fff;
+	float: right;
+	font-size: 40px;
+	font-weight: 200;
+	height: 40px;
+	line-height: 46px;
+	position: fixed;
+	right: 10px;
+	top: 20px;
+	text-align: center;
+	width: 40px;
+}
+
+.close:hover
+{
+	background-color: #e34b4f;
+}
+
+.close:hover:after
+{
+	color: #ccc;
+	content: 'Back Home';
+	font-size: 20px;
+	left: -110px;
+	position: absolute;
+}
+
+footer
+{
+	border: solid #ebeff1;
+	border-width: 2px 0;
+	margin: 50px 0;
+	padding: 30px;
+	text-align: center;
+}
+
+footer img
+{
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+
+footer h3
+{
+	margin-top: 0;
+}
+
+footer p
+{
+	font-size: 16px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+footer p:last-child
+{
+	margin: 0;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px)
 {
+	a,
+	header,
+	header div,
+	header h1,
+	header p,
+	.years,
+	.year,
+	.year h2,
+	.year ul
+	{
+		-webkit-transition: all .2s ease-in-out;
+		-moz-transition: all .2s ease-in-out;
+		-o-transition: all .2s ease-in-out;
+		transition: all .2s ease-in-out;
+	}
+
 	html,
 	body,
 	.years,
@@ -162,7 +304,7 @@ header a
 		height: 100%;
 	}
 
-	body
+	body.home
 	{
 		overflow: hidden;
 	}
@@ -171,6 +313,11 @@ header a
 	header div
 	{
 		height: 165px;
+	}
+
+	.years
+	{
+		width: 101%;
 	}
 
 	.year
@@ -219,6 +366,17 @@ header a
 		height: 10px;
 		position: relative;
 		z-index: -1;
+	}
+
+	footer
+	{
+		text-align: left;
+	}
+
+	footer img
+	{
+		float: left;
+		margin: 0 50px 50px 0;
 	}
 }
 

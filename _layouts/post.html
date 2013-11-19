@@ -2,64 +2,46 @@
 layout: default
 ---
 
-<div>
-	<a href="/">&laquo; Back Home</a>
-</div>
+<a href="/" class="close">&times;</a>
+<article>
+	<time>{{ page.date | date_to_string }}</time>
+	<h1>{{ page.title }}</h1>
+	{{ content }}
 
-<h1>{{ page.title }}</h1>
-<time>{{ page.date | date_to_string }}</time>
+	<footer>
+		<img src="{{ site.avatar }}?s=128" class="avatar" />
+		<p><strong>Joshua Sherman</strong> is a thirty something full stack hacker with a passion for building tools that bring people together. Husband, father and the Chief Alchemist &amp; Founder of <a href="http://gravityblvd.com" target="_blank">Gravity Boulevard</a>.</p>
+		<p>Connect with <strong>Joshua</strong> on <a href="https://github.com/joshtronic" target="_blank">GitHub</a>, <a href="http://instagram.com/joshtronic" target="_blank">Instagram</a>, <a href="https://www.linkedin.com/in/joshsherman" target="_blank">LinkedIn</a> and <a href="http://twitter.com/joshtronic" target="_blank">Twitter</a>.</p>
+	</footer>
 
-<br><br>
-<!-- AddThis Button BEGIN -->
-<div class="addthis_toolbox addthis_default_style">
-<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-<a class="addthis_button_tweet"></a>
-<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
-<a class="addthis_button_linkedin_counter"></a>
-<a class="addthis_counter addthis_pill_style"></a>
-</div>
-<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-516326a24ac87e2b"></script>
-<!-- AddThis Button END -->
+	<!-- AddThis Smart Layers BEGIN -->
+	<!-- Go to http://www.addthis.com/get/smart-layers to customize -->
+	<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4dcc6b6c6c8b799e"></script>
+	<script type="text/javascript">
+	  addthis.layers({
+		'theme' : 'transparent',
+		'share' : {
+		  'position' : 'left',
+		  'numPreferredServices' : 5
+		},
+		'whatsnext' : {},
+		'recommended' : {}
+	  });
+	</script>
+	<!-- AddThis Smart Layers END -->
 
-{{ content }}
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+		var disqus_shortname = 'joshtronic';
 
-<div class="divider"></div>
-
-<h3>About Josh</h3>
-
-<img src="{{ site.avatar }}?s=128" class="avatar" />
-
-<div class="about">
-	<p>A thirty something full stack developer with a passion for building tools that bring people together. Founder and Chief Alchemist of <a href="http://gravityblvd.com" target="_blank">Gravity Boulevard</a>, niche blogger at <a href="http://phpave.com" target="_blank">PHP Avenue</a> and former CTO at <a href="http://crowdsavings.com" target="_blank">CrowdSavings.com</a>.</p>
-	<p>When I’m not coding, I enjoy spending time with <a href="http://thatgirljen.com" target="_blank">my lovely wife</a>, <a href="http://lizzypaige.com" target="_blank">our exceptional daughter</a> and our three noisy pugs, playing Minecraft, baking bread and playing cover songs on the bass. I am most active on <a href="https://github.com/joshtronic" target="_blank">GitHub</a>, <a href="http://instagram.com/joshtronic" target="_blank">Instagram</a>, <a href="https://www.linkedin.com/in/joshsherman" target="_blank">LinkedIn</a> and <a href="http://joshtronic.tumblr.com" target="_blank">Tumblr</a>.
-</div>
-
-<div class="divider"></div>
-
-<h3>Previous Posts</h3>
-
-<table>
-	{% for post in site.related_posts limit:3 %}
-		<tr>
-			<td class="nowrap"><time>{{ post.date | date: "%d %b <span>%Y</span>" }}</time>{{ site.delimiter }}</td>
-			<td><a href="{{ post.url }}">{{ post.title }}</a></td>
-		</tr>
-	{% endfor %}
-</table>
-
-<div class="divider"></div>
-
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-	var disqus_shortname = 'joshtronic';
-
-	/* * * DON'T EDIT BELOW THIS LINE * * */
-	(function() {
-		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		/* * * DON'T EDIT BELOW THIS LINE * * */
+		(function() {
+			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		})();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+<article>
