@@ -13,77 +13,72 @@
 	transition: all .2s ease-in-out;
 }
 
-html,
-body,
-.years,
-.year,
-.year h2
-{
-	height: 100%;
-}
-
-body,
-h1
-{
-	font-family: Merriweather, serif;
-}
-
 body
 {
-	background-color: #000;
-	overflow: hidden;
-	padding-top: 140px;
+	font-family: Merriweather, serif;
+	line-height: 1.4;
 }
 
 a
 {
 	color: #19538c;
+	text-decoration: none;
 }
 
 a:hover
 {
 	background-color: #fff4cc;
-	text-decoration: none;
 }
 
-.navbar-header,
-.years
+h2,
+.year h2,
+.year h3
 {
-	width: 100%;
+	font-weight: 500;
 }
 
-.navbar-header
+body,
+header h1,
+.year h2,
+.year ul
 {
-	color: #eee;
-	height: 140px;
-	text-align: center;
+	margin: 0;
 }
 
-.navbar-header a
+header,
+.year h2
 {
-	color: #999;
+	color: #fff;
 }
 
-h1 span
-{
-	color: #f96436;
-}
-
+header,
 .years
 {
 	background-color: #000;
 }
 
-.year
+header div
 {
-	width: 17%;
-	float: left;
+	background-color: #222;
+	text-align: center;
+	padding: 20px;
+}
+
+header h1 span
+{
+	color: #f96436;
+}
+
+header a
+{
+	color: #999;
 }
 
 .year h2,
-.year ul
+.year h3,
+.year time
 {
-	margin: 0;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .year h2
@@ -91,13 +86,12 @@ h1 span
 	color: #fff;
 	cursor: pointer;
 	font-size: 60px;
-	padding: 20px 50px;
 }
 
-.year-2013,
-.year-2008
+.year h2,
+.year li
 {
-	width: 16%;
+	padding: 20px;
 }
 
 .year-2013 h2 { background-color: #19538c; }
@@ -109,20 +103,15 @@ h1 span
 
 .year ul
 {
-	background: #fff;
+	background-color: #fff;
 	height: 0;
 	list-style: none;
 	padding: 0;
+	overflow: hidden;
 }
 
 .year li:nth-child(even) { background-color: #ddd; }
 .year li:nth-child(odd)  { background-color: #eee; }
-
-.year li
-{
-	padding: 20px 50px;
-	text-decoration: none;
-}
 
 .year time
 {
@@ -133,44 +122,104 @@ h1 span
 	text-transform: uppercase;
 }
 
-.year h3
+.year p
 {
-	margin: 6px 0 4px;
-	line-height: 28px;
+	color: #666;
 }
 
-.year-active
+.year h3
 {
-	width: 25%;
+	font-size: 24px;
+	line-height: 28px;
+	margin: 6px 0 0;
 }
 
 .year-active h2
 {
 	font-size: 35px;
-	height: 78px;
+	height: auto;
 }
 
-.navbar-inactive,
+.year-active ul
+{
+	height: auto;
+}
+
 .year-inactive h2
 {
 	opacity: 0.5;
 }
 
-.year-active ul
-{
-	height: 100%;
-	overflow-y: scroll;
-	padding-bottom: 78px;
-}
-
-.year-inactive
-{
-	width: 15%;
-}
-
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px)
 {
+	html,
+	body,
+	.years,
+	.year,
+	.year h2
+	{
+		height: 100%;
+	}
+
+	body
+	{
+		overflow: hidden;
+	}
+
+	header,
+	header div
+	{
+		height: 165px;
+	}
+
+	.year
+	{
+		width: 17%;
+		float: left;
+	}
+
+	.year-2013,
+	.year-2008
+	{
+		width: 16%;
+	}
+
+	.year h2,
+	.year li
+	{
+		padding: 20px 50px;
+	}
+
+	.year-active
+	{
+		width: 25%;
+	}
+
+	.year-active h2
+	{
+		height: 83px;
+	}
+
+	.year-active ul
+	{
+		height: 100%;
+		overflow-y: scroll;
+		padding-bottom: 93px;
+	}
+
+	.year-inactive
+	{
+		width: 15%;
+	}
+
+	.header-inactive,
+	.header-inactive div
+	{
+		height: 10px;
+		position: relative;
+		z-index: -1;
+	}
 }
 
 /* Medium devices (desktops, 992px and up) */
