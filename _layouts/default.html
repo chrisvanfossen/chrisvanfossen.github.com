@@ -14,13 +14,15 @@
 	</head>
 
 	<body>
-		<header>
-			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="/">Joshua Sherman</a>
-				</div>
-			</nav>
-		</header>
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<!--img src="{{ site.avatar }}?s=128" class="img-circle"-->
+			<div class="navbar-header">
+				<h1>Hello, my name is <span>Joshua Sherman</span></h1>
+				<p>and I am a full stack hacker with a passion for building tools that bring people together.</p>
+				<p>Husband, father and the Founder &amp; Chief Alchemist of <a href="http://gravityblvd.com" target="_blank">Gravity Boulevard</a>.</p>
+				<!--a class="navbar-brand" href="/">Joshua Sherman</a-->
+			</div>
+		</nav>
 		{{ content }}
 
 
@@ -94,25 +96,7 @@
 
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.2/js/bootstrap.min.js"></script>
-		<script>
-			$(document).ready(function()
-			{
-				$('.year').on('click', function()
-				{
-					var is_active = $(this).hasClass('year-active');
-					var year      = $(this).data('year');
-
-					$('.year').removeClass('year-active').removeClass('year-inactive');
-
-					if (!is_active)
-					{
-						$(this).addClass('year-active');
-						$('.posts-' + year).addClass('year-active');
-						$('.year:not(.year-active)').addClass('year-inactive');
-					}
-				});
-			});
-		</script>
+		<script src="/js/core.js"></script>
 		<script>
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-2119050-11']);

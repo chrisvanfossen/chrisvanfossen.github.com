@@ -1,10 +1,20 @@
 $(function()
 {
-	// Toggles blog post years
-	$('h4.toggle').click(function()
+	$('.year').on('click', function()
 	{
-		var table = $('table[data-year="' + $(this).data('year') + '"]');
-		$('span', this).html($('span', this).html() == '+' ? '-' : '+');
-		table.toggle();
+		var is_active = $(this).hasClass('year-active');
+		var year      = $(this).data('year');
+
+		$('.year').removeClass('year-active').removeClass('year-inactive');
+		$('.posts-' + year).scrollTop(0);
+		$('.navbar-header').removeClass('navbar-inactive');
+
+		if (!is_active)
+		{
+			$(this).addClass('year-active');
+			$('.posts-' + year).addClass('year-active');
+			$('.year:not(.year-active)').addClass('year-inactive');
+			$('.navbar-header').addClass('navbar-inactive');
+		}
 	});
 });

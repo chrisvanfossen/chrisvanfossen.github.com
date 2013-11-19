@@ -15,16 +15,24 @@
 
 html,
 body,
-.year
+.years,
+.year,
+.year h2
 {
 	height: 100%;
 }
 
-body
+body,
+h1
 {
 	font-family: Merriweather, serif;
-	padding-top: 50px;
+}
+
+body
+{
+	background-color: #000;
 	overflow: hidden;
+	padding-top: 140px;
 }
 
 a
@@ -38,11 +46,32 @@ a:hover
 	text-decoration: none;
 }
 
+.navbar-header,
+.years
+{
+	width: 100%;
+}
+
+.navbar-header
+{
+	color: #eee;
+	height: 140px;
+	text-align: center;
+}
+
+.navbar-header a
+{
+	color: #999;
+}
+
+h1 span
+{
+	color: #f96436;
+}
+
 .years
 {
 	background-color: #000;
-	height: 100%;
-	width: 100%;
 }
 
 .year
@@ -51,13 +80,17 @@ a:hover
 	float: left;
 }
 
+.year h2,
+.year ul
+{
+	margin: 0;
+}
+
 .year h2
 {
 	color: #fff;
 	cursor: pointer;
 	font-size: 60px;
-	height: 100%;
-	margin: 0;
 	padding: 20px 50px;
 }
 
@@ -79,7 +112,6 @@ a:hover
 	background: #fff;
 	height: 0;
 	list-style: none;
-	margin: 0;
 	padding: 0;
 }
 
@@ -118,6 +150,7 @@ a:hover
 	height: 78px;
 }
 
+.navbar-inactive,
 .year-inactive h2
 {
 	opacity: 0.5;
@@ -133,4 +166,19 @@ a:hover
 .year-inactive
 {
 	width: 15%;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px)
+{
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px)
+{
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px)
+{
 }
