@@ -11,8 +11,9 @@ title:  joshtronic
 			{% if year != nil %}
 				</ul></div>
 			{% endif %}
-			<div class="year year-{{ current_year }}">
-				<h2 data-year="{{ current_year }}">{{ current_year }}</h2>
+			<a name="{{ current_year }}"></a>
+			<div class="year year-{{ current_year }}" data-year="{{ current_year }}">
+				<h2>{{ current_year }}</h2>
 				<ul class="posts-{{ current_year }}">
 			{% assign year = current_year %}
 		{% endif %}
