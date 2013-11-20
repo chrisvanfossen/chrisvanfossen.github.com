@@ -303,6 +303,11 @@ footer p
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px)
 {
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px)
+{
 	a,
 	header,
 	.header-container,
@@ -405,11 +410,6 @@ footer p
 	{
 		margin: 0 50px 50px 0;
 	}
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px)
-{
 }
 
 /* Large devices (large desktops, 1200px and up) */
