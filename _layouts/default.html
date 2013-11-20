@@ -16,22 +16,15 @@
 			<header>
 				<div class="header-container">
 					<h1>
-						<div class="header-greeting">Hello.</div>
+						<div class="header-greeting">Hello...</div>
 						<div class="header-intro">
 							My name is <strong>{{ site.name_full }}</strong> and I am a thirty something <strong>full stack hacker</strong> with a <strong>passion</strong> for building tools <strong>that bring people together</strong>. Husband, father and the Chief Alchemist &amp; Founder of <a href="http://gravityblvd.com" target="_blank">Gravity Boulevard</a>.
 						</div>
 					</h1>
 				</div>
-
-
-				<!--div>
-					<h1>Hello, my name is <span>{{ site.name_full }}</span></h1>
-					<p>I am a <strong>full stack hacker</strong> with a <strong>passion</strong> for building tools that <strong>bring people together</strong></p>
-					<p>Husband, father and the Chief Alchemist &amp; Founder of <a href="http://gravityblvd.com" target="_blank">Gravity Boulevard</a></p>
-				</div-->
 			</header>
 		{% else %}
-			<div class="header-bar"></div>
+			<header class="header-bar"></header>
 		{% endif %}
 		{{ content }}
 

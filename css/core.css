@@ -32,10 +32,11 @@ a:hover
 
 article h1,
 article h2,
-article p a,
+article a,
 h2,
 .year h2,
-.year h3
+.year h3,
+header a
 {
 	font-weight: 500;
 }
@@ -50,12 +51,17 @@ header h1,
 }
 
 .close,
-header,
 header a,
 header a:hover,
+.header-greeting,
 .year h2
 {
 	color: #fff;
+}
+
+header
+{
+	color: #ddd;
 }
 
 .header-bar,
@@ -170,10 +176,6 @@ time
 {
 	font-size: 24px;
 	line-height: 28px;
-}
-
-.year h3
-{
 	margin: 6px 0 0;
 }
 
@@ -237,7 +239,7 @@ article p
 	margin: 30px 0;
 }
 
-article p a
+article a
 {
 	color: #4a94db;
 }
@@ -304,8 +306,6 @@ footer p
 	a,
 	header,
 	.header-container,
-	.header-container h1,
-	.header-container h1 div,
 	.years,
 	.year,
 	.year h2,
@@ -346,7 +346,7 @@ footer p
 
 	.years
 	{
-		width: 101%;
+		width: 101%; /* 101% to resolve a weird bug in Safari */
 	}
 
 	footer img,
@@ -385,7 +385,6 @@ footer p
 	.year-active ul
 	{
 		overflow-y: scroll;
-		/* TODO */
 		padding-bottom: 93px;
 	}
 
