@@ -1,11 +1,10 @@
-avatar:      http://www.gravatar.com/avatar/a8dc1f35af7e04617f9e20d1bb4ced62
-title:       Joshua Sherman
-description: Hacker, Fiscal Conservative, Tattoos &amp; Expletives
-delimiter:   "&nbsp;&nbsp;"
-domain:      http://joshtronic.com
-email:       joshtronic@gmail.com
-markdown:    rdiscount
-permalink:   pretty
-pygments:    true
-username:    joshtronic
-future:      true
+domain:     http://joshtronic.com
+email:      joshtronic@gmail.com
+future:     true
+github:     joshtronic
+gravatar:   http://www.gravatar.com/avatar/a8dc1f35af7e04617f9e20d1bb4ced62
+markdown:   rdiscount
+name_first: Joshua
+name_full:  Joshua Sherman
+permalink:  pretty
+pygments:   true

@@ -41,6 +41,7 @@ h2,
 }
 
 body,
+footer p:last-child,
 header h1,
 .year h2,
 .year ul
@@ -48,36 +49,52 @@ header h1,
 	margin: 0;
 }
 
+.close,
 header,
 header a,
+header a:hover,
 .year h2
 {
 	color: #fff;
 }
 
-header div,
 .header-bar,
+.header-container,
 .years
 {
 	background-color: #222;
 }
 
-header div,
+.header-container,
 .year h2,
 .year li
 {
 	padding: 20px;
 }
 
-header div
+.close,
+footer,
+.header-container
 {
 	text-align: center;
-	font-weight: 300;
 }
 
-header h1
+.header-greeting
 {
-	color: #f96436;
+	font-size: 80px;
+	line-height: 1;
+	margin-bottom: 10px;
+}
+
+.close:hover:after,
+.header-intro
+{
+	font-size: 20px;
+}
+
+.header-intro
+{
+	font-weight: 300;
 }
 
 header strong
@@ -85,10 +102,14 @@ header strong
 	color: #d4f033;
 }
 
+header strong:first-child
+{
+	color: #f96436;
+}
+
 header a:hover
 {
 	background: transparent;
-	color: #fff;
 }
 
 article h1,
@@ -104,7 +125,6 @@ time,
 
 .year h2
 {
-	color: #fff;
 	cursor: pointer;
 	font-size: 60px;
 }
@@ -128,11 +148,15 @@ time,
 .year li:nth-child(even) { background-color: #ddd; }
 .year li:nth-child(odd)  { background-color: #eee; }
 
+.header-bar,
+time
+{
+	display: block;
+}
+
 time
 {
 	color: #999;
-	display: block;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 12px;
 	text-transform: uppercase;
 }
@@ -153,15 +177,15 @@ time
 	margin: 6px 0 0;
 }
 
-.year-active h2
-{
-	font-size: 35px;
-	height: auto;
-}
-
+.year-active h2,
 .year-active ul
 {
 	height: auto;
+}
+
+.year-active h2
+{
+	font-size: 35px;
 }
 
 .year-inactive h2
@@ -169,11 +193,15 @@ time
 	opacity: 0.5;
 }
 
+.close,
 .header-bar
 {
-	display: block;
-	height: 10px;
 	position: fixed;
+}
+
+.header-bar
+{
+	height: 10px;
 }
 
 article
@@ -195,11 +223,16 @@ article h1
 	margin: 0 0 30px 0;
 }
 
+.close,
+article p
+{
+	font-weight: 200;
+}
+
 article p
 {
 	color: #333;
 	font-size: 18px;
-	font-weight: 200;
 	line-height: 1.8;
 	margin: 30px 0;
 }
@@ -215,16 +248,12 @@ article p a
 	-webkit-border-radius: 50% 0 50% 50%;
 	-moz-border-radius: 50% 0 50% 50%;
 	border-radius: 50% 0 50% 50%;
-	color: #fff;
 	float: right;
 	font-size: 40px;
-	font-weight: 200;
 	height: 40px;
 	line-height: 46px;
-	position: fixed;
 	right: 10px;
 	top: 20px;
-	text-align: center;
 	width: 40px;
 }
 
@@ -237,7 +266,6 @@ article p a
 {
 	color: #ccc;
 	content: 'Back Home';
-	font-size: 20px;
 	left: -110px;
 	position: absolute;
 }
@@ -248,7 +276,6 @@ footer
 	border-width: 2px 0;
 	margin: 50px 0;
 	padding: 30px;
-	text-align: center;
 }
 
 footer img
@@ -271,19 +298,14 @@ footer p
 	margin-bottom: 15px;
 }
 
-footer p:last-child
-{
-	margin: 0;
-}
-
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px)
 {
 	a,
 	header,
-	header div,
-	header h1,
-	header p,
+	.header-container,
+	.header-container h1,
+	.header-container h1 div,
 	.years,
 	.year,
 	.year h2,
@@ -299,7 +321,8 @@ footer p:last-child
 	body,
 	.years,
 	.year,
-	.year h2
+	.year h2,
+	.year-active ul
 	{
 		height: 100%;
 	}
@@ -309,10 +332,16 @@ footer p:last-child
 		overflow: hidden;
 	}
 
-	header,
-	header div
+	footer,
+	.header-container
 	{
-		height: 165px;
+		text-align: left;
+	}
+
+	header,
+	.header-container
+	{
+		height: 214px;
 	}
 
 	.years
@@ -320,10 +349,15 @@ footer p:last-child
 		width: 101%;
 	}
 
+	footer img,
+	.year
+	{
+		float: left;
+	}
+
 	.year
 	{
 		width: 17%;
-		float: left;
 	}
 
 	.year-2013,
@@ -350,8 +384,8 @@ footer p:last-child
 
 	.year-active ul
 	{
-		height: 100%;
 		overflow-y: scroll;
+		/* TODO */
 		padding-bottom: 93px;
 	}
 
@@ -361,21 +395,15 @@ footer p:last-child
 	}
 
 	.header-inactive,
-	.header-inactive div
+	.header-inactive .header-container
 	{
 		height: 10px;
 		position: relative;
 		z-index: -1;
 	}
 
-	footer
-	{
-		text-align: left;
-	}
-
 	footer img
 	{
-		float: left;
 		margin: 0 50px 50px 0;
 	}
 }

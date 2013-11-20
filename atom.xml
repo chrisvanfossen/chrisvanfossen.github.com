@@ -3,14 +3,14 @@ layout: nil
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<title>{{ site.title }}</title>
-	<subtitle>{{ site.description }}</subtitle>
+	<title>{{ site.name_full }}</title>
+	<subtitle><![CDATA[{{ site.name_full }} is a thirty something full stack hacker with a passion for building tools that bring people together. Husband, father and the Chief Alchemist &amp; Founder of <a href="http://gravityblvd.com" target="_blank">Gravity Boulevard</a>]]></subtitle>
 	<link href="{{ site.domain }}/atom.xml" rel="self" />
 	<link href="{{ site.domain }}" />
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
 	<id>{{ site.domain }}</id>
 	<author>
-		<name>{{ site.title }}</name>
+		<name>{{ site.name_full }}</name>
 		<email>{{ site.email }}</email>
 	</author>
 
