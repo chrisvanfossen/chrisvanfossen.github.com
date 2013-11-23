@@ -1,10 +1,13 @@
 $(function()
 {
-	$('.year').on('click', function()
+	$('.year h2').on('click', function()
 	{
-		var is_active = $(this).hasClass('year-active');
-		var year      = $(this).data('year');
+		var div       = $(this).parent('.year');
+		var is_active = div.hasClass('year-active');
+		var year      = div.data('year');
 		var fragment  = '#';
+
+		console.log(is_active, year);
 
 		$('.year').removeClass('year-active').removeClass('year-inactive');
 		$('.posts-' + year).scrollTop(0);
@@ -12,7 +15,7 @@ $(function()
 
 		if (!is_active)
 		{
-			$(this).addClass('year-active');
+			div.addClass('year-active');
 			$('.year:not(.year-active)').addClass('year-inactive');
 			$('header').addClass('header-inactive');
 
