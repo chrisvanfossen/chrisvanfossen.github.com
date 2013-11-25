@@ -4,7 +4,7 @@ layout: default
 
 <a href="/" class="close">&times;</a>
 <article>
-	<time>{{ page.date | date_to_string }}</time>
+	<time>{{ page.date | date: "%-d %B %Y" }}</time>
 	<h1>{{ page.title }}</h1>
 	{{ content }}
 

@@ -226,12 +226,14 @@ article h1
 }
 
 .close,
-article p
+article p,
+article ul
 {
 	font-weight: 200;
 }
 
-article p
+article p,
+article ul
 {
 	color: #333;
 	font-size: 18px;
@@ -239,6 +241,47 @@ article p
 	margin: 30px 0;
 }
 
+article ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+article li
+{
+	line-height: 1.6;
+	padding-left: 50px;
+	text-indent: -17px;
+}
+
+article blockquote:before,
+article li:before
+{
+	font-weight: 900;
+}
+
+article li:before
+{
+	content: '• ';
+	margin-right: 5px;
+}
+
+article blockquote
+{
+	margin-left: 70px;
+}
+
+article blockquote:before
+{
+	content: '“';
+	font-size: 50px;
+	position: absolute;
+	margin-left: -50px;
+}
+
+article blockquote:before,
+article li:before,
 article a
 {
 	color: #4a94db;
