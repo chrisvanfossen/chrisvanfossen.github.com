@@ -226,13 +226,14 @@ article h1
 }
 
 .close,
-article p,
-article ul
+article li,
+article p
 {
 	font-weight: 200;
 }
 
 article p,
+article ol li,
 article ul
 {
 	color: #333;
@@ -251,17 +252,21 @@ article ul
 article li
 {
 	line-height: 1.6;
+}
+
+article ul li
+{
 	padding-left: 50px;
 	text-indent: -17px;
 }
 
 article blockquote:before,
-article li:before
+article ul li:before
 {
 	font-weight: 900;
 }
 
-article li:before
+article ul li:before
 {
 	content: '• ';
 	margin-right: 5px;
