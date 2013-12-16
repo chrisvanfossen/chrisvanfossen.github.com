@@ -7,12 +7,13 @@ In my defense, I’m a grown ass man and I knew exactly what I was doing. I was 
 
 The bidding process was actually pretty painless but not without suspect. After my initial bid was accepted, bidding escalated quite quickly up to the reserve price. Once near the reserve, I said “fuck it” and bought it for the reserve. No doubt in my mind that I wasn’t a victim of shill bidding. I also bid on some other sites and noticed that almost all of them approached the reserve price in the same way and didn’t sell and were relisted with the same reserve. Safe to assume with these chop shop, lower price sites this is a common scenario. One really weird thing was when I bid on another site and the seller sent me this:
 
-	Thanks for bidding on this gorgeous looking hotel / flight website.
-	Can you please confirm that you are a serious bidder. I want to sell this website to a guy who is serious for money making.
-	You can go for buy it now option to avoid bidding war.
-	You will get ONE extra website, free transfer, free lifetime support & much more as BUY IT NOW buyer.Do not forget to check buy it now bonuses.
-
-	All the best.
+> Thanks for bidding on this gorgeous looking hotel / flight website.
+> Can you please confirm that you are a serious bidder. I want to sell this website to a guy who is serious for money making.
+>
+> You can go for buy it now option to avoid bidding war.
+> You will get ONE extra website, free transfer, free lifetime support & much more as BUY IT NOW buyer.Do not forget to check buy it now bonuses.
+>
+> All the best.
 
 I replied back that I was completely serious and they thanked me for the confirmation. That particular auction went unsold at 30$ and there was no bidding war. At this point I was shill bid into purchasing a site at the buy it now price and blew through my budget since there were no sites going for less than 50$ from what I saw. I was happy with just the one site because I was very skeptical of the quality of the products but still wanted to get my hands on one. It was for science and figured would make a great blog post ;)
 
