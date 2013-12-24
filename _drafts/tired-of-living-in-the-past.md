@@ -1,0 +1,1 @@
+we expect users to be using completely up to date browsers while at the same time we’re using long term support releases of ubuntu that may actually be years old but also the software packages themselves are dated. 12.04 comes with nginx 1.1 and php 5.3 by default even though both are at least 2 minor revisions behind.
