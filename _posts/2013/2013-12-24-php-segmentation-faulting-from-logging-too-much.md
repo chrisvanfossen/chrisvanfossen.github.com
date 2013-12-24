@@ -7,9 +7,13 @@ At least I think that’s what was happening. Today I made the somewhat calculat
 
 Aside from a small bit of downtime as everything was upgraded and `php5-redis` was installed, everything seemed to have went off without a hitch. That was until maybe 15-20 minutes later when my sites went unresponsive and there were upstream connection timeout errors all over my `nginx` logs. Initially I thought it was my new “leaderboard as a service” site, [LeaderBin](http://leaderbin.com), that was causing the issue. I went ahead and disabled where I had it integrated and restarted `php5-fpm`. So at this point we’re back online but I was still concerned that the issue was perhaps because of the new version of PHP, while dreading a rollback scenario..
 
-Further investigation led me to believe that the problem was New Relic’s fault because I found a segmentation fault in it’s logs. Easy enough, let’s go ahead and uninstall New Relic just to be on the safe side. After that was purged, I _finally_ started to poke around the `kern.log` for the segfaults and found that `php5-fpm` was in fact segfaulting and New Relic was simply logging that fact. I ran `grep` for “segfault” and piped it out to `wc -l` every couple of minutes and realized that the segfaults were in fact still happening. Just great, and we have a Christmas Eve party to go to in a few hours!
+Further investigation led me to believe that the problem was New Relic’s fault because I found a segmentation fault in it’s logs. Easy enough, let’s go ahead and uninstall New Relic just to be on the safe side. After that was purged, I _finally_ started to poke around the `kern.log` for the segfaults and found that `php5-fpm` was in fact segfaulting and New Relic was simply logging that fact. I ran `grep` for “segfault” and piped it out to `wc -l` every couple of minutes and realized that the segfaults were in fact still happening. Just great, and we have a Christmas Eve party to go to in a few hours! The error in question looked something like this:
 
-So it’s been a while since I’ve had to troubleshoot a segfault in PHP, a little bit of Googling got me to the PHP page for how to use `gdb` to backtrace the situation. Seemed like a bit more effort than I was willing to put into it at this time so I wrote this command to grab the time of the most recent segfault and search my `nginx` logs for the same time:
+```
+Dec 24 16:08:50 aurora kernel: [14349405.602290] php5-fpm[6583]: segfault at 1000721 ip 00000000006ee087 sp 00007fff26f8d9a0 error 4 in php5-fpm[400000+798000]
+```
+
+The segfault error was pretty consistent so I tried searching for some of the specific numbers / codes thinking I could find something. No dice plus it had been years since I last had to troubleshoot a segfault in PHP, a little bit more Googling got me to the PHP page for how to use `gdb` to backtrace the situation. Seemed like a bit more effort than I was willing to put into it at this time so I wrote this command to grab the time of the most recent segfault and search my `nginx` logs for the same time:
 
 ```shell
 grep 'segfault' /var/log/kern.log | tail -n 1 | awk '{print $3}' | xargs -I '$' grep '2013/12/24 $' /var/log/nginx -R
@@ -18,7 +22,7 @@ grep 'segfault' /var/log/kern.log | tail -n 1 | awk '{print $3}' | xargs -I '$' 
 **BOOM!** That command revealed that there was a PHP deprecation message being logged. No biggie, it’s just a deprecation _warning_, right? Wrong, this particular warning was being logged a few times a second and the error itself was massive as the command was inside of a loop (don’t judge me!). That’s definitely part of the fun of running a decently-trafficked site. The error lines looked something like this:
 
 ```
-2013/12/24 16:08:00 [error] 2339#0: *240267 FastCGI sent in stderr: "PHP message: PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in classes/CustomString.php on line 18
+2013/12/24 16:08:50 [error] 2339#0: *240267 FastCGI sent in stderr: "PHP message: PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in classes/CustomString.php on line 18
 PHP message: PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /classes/CustomString.php on line 19
 PHP message: PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /classes/CustomString.php on line 18
 PHP message: PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /classes/CustomString.php on line 19
