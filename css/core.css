@@ -134,12 +134,13 @@ time,
 	font-size: 60px;
 }
 
-.year-2013 h2 { background-color: #19538c; }
-.year-2012 h2 { background-color: #1d60a2; }
-.year-2011 h2 { background-color: #216db7; }
-.year-2010 h2 { background-color: #2579cd; }
-.year-2009 h2 { background-color: #3186da; }
-.year-2008 h2 { background-color: #4693de; }
+.year-2014 h2 { background-color: #19538c; }
+.year-2013 h2 { background-color: #1d60a2; }
+.year-2012 h2 { background-color: #216db7; }
+.year-2011 h2 { background-color: #2579cd; }
+.year-2010 h2 { background-color: #3186da; }
+.year-2009 h2 { background-color: #4693de; }
+.year-2008 h2 { background-color: #5ca0e2; }
 
 .year ul
 {
@@ -411,23 +412,13 @@ footer p
 
 	.years
 	{
-		width: 101%; /* 101% to resolve a weird bug in Safari */
+		width: 100.01%;
 	}
 
 	.year
 	{
 		float: left;
-	}
-
-	.year
-	{
-		width: 17%;
-	}
-
-	.year-2013,
-	.year-2008
-	{
-		width: 16%;
+		width: 20%;
 	}
 
 	.year h2,
@@ -438,7 +429,7 @@ footer p
 
 	.year-active
 	{
-		width: 25%;
+		width: 36%;
 	}
 
 	.year-active h2
@@ -454,7 +445,7 @@ footer p
 
 	.year-inactive
 	{
-		width: 15%;
+		width: 16%;
 	}
 
 	.header-inactive,
@@ -477,4 +468,5 @@ footer p
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px)
 {
+
 }
