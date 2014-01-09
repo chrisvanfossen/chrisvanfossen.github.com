@@ -5,6 +5,7 @@ title:  joshtronic
 
 <div class="years">
 	{% assign year = nil %}
+	{% assign index = 0 %}
 	{% for post in site.posts %}
 		{% assign current_year = post.date | date: "%Y" %}
 		{% if year != current_year %}
@@ -12,10 +13,11 @@ title:  joshtronic
 				</ul></div>
 			{% endif %}
 			<a name="{{ current_year }}"></a>
-			<div class="year year-{{ current_year }}" data-year="{{ current_year }}">
+			<div class="year year-{{ current_year }}" data-year="{{ current_year }}" data-index="{{ index }}">
 				<h2>{{ current_year }}</h2>
 				<ul class="posts-{{ current_year }}">
 			{% assign year = current_year %}
+			{% assign index = index | plus:1 %}
 		{% endif %}
 		<li>
 			<time>{{ post.date | date: "%-d %B %Y" }}</time>
@@ -26,3 +28,5 @@ title:  joshtronic
 	{% endfor %}
 	</ul></div>
 </div>
+<div class="year-nav year-nav-newer year-nav-disabled">&#9194;</div>
+<div class="year-nav year-nav-older">&#9193;</div>

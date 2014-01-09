@@ -341,6 +341,11 @@ footer p
 	margin-bottom: 15px;
 }
 
+.year-nav
+{
+	display: none;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px)
 {
@@ -376,7 +381,8 @@ footer p
 	.years,
 	.year,
 	.year h2,
-	.year ul
+	.year ul,
+	.year-nav
 	{
 		-webkit-transition: all .2s ease-in-out;
 		-moz-transition: all .2s ease-in-out;
@@ -462,6 +468,44 @@ footer p
 		content: 'Home';
 		left: -64px;
 		position: absolute;
+	}
+
+	.year-nav
+	{
+		bottom: -80px;
+		color: #fff;
+		cursor: pointer;
+		display: block;
+		font-size: 4em;
+		position: absolute;
+		text-align: center;
+	}
+
+	.year-nav-newer
+	{
+		left: 24px;
+	}
+
+	.year-nav-older
+	{
+		right: 24px;
+	}
+
+	.year-nav-visible
+	{
+		bottom: 10px;
+	}
+
+	.year-nav-newer.year-nav-disabled,
+	.year-nav-newer.year-nav-inactive
+	{
+		left: -80px;
+	}
+
+	.year-nav-older.year-nav-disabled,
+	.year-nav-older.year-nav-inactive
+	{
+		right: -80px;
 	}
 }
 
