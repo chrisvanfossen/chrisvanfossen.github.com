@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Your stack in outdated
+title:  Your stack is outdated
 ---
 
 I’ve been noticing a pattern with most of my peers (yes I said **most**), they expect their users to be running the latest and greatest version of their favorite “modern” browser and all the while their server stack is collecting dust. Ubuntu doesn’t help matters with their Long Term Service (LTS) releases that provide 5 years of stability and security updates on the packages. Those packages are considered stable but are generally quite old, especially with more the aggressive release cycles that are being adopted. I get it, you want a stable system. I do too, but I want my stability at the OS level (kernel, C libraries, et cetera) and can’t fathom using forward facing software that’s actually years old if there’s newer alternatives available.
