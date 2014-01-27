@@ -3,13 +3,13 @@ layout: post
 title:  Command line all the things!
 ---
 
-The start of 2014 has been an exercise in going back to basics for me. I’ve been re-evaluating my workflows when hacking and attempting to streamline as much as humanly possible. This has resulted in a ton of new `alias`es in an attempt to get my common CLI commands down to 2 or 3 characters as well as the adoption of a ton of new commands that I wasn’t even aware of a month ago. There has also been a ton of rework to my `vim` configuration, but I’ll save that for another post.
+The start of 2014 has been an exercise in going back to basics for me. I’ve been re-evaluating my workflows when hacking and attempting to streamline as much as humanly possible. This has resulted in a ton of new aliases in an attempt to get my common CLI commands down to 2 or 3 characters as well as the adoption of a ton of new commands that I wasn’t even aware of a month ago. There has also been a ton of rework to my `vim` configuration, but I’ll save that for another post.
 
-## Shell `alias`es
+## Shell aliases
 
-`alias`es are absolutely my favorite way to save keystrokes and often times allow me to cut out the thought process when trying to remember how to run some complex command that I only run into a few times a year. I’ve been a `zsh` user for some time now and `oh-my-zsh` has a ton of plugins that provide you with a ton of `alias`es but I’ve some of my `alias`es predate my `zsh` usage and some of the `alias`es provided just aren’t as short / intuitive as I’d like them to be.
+aliases are absolutely my favorite way to save keystrokes and often times allow me to cut out the thought process when trying to remember how to run some complex command that I only run into a few times a year. I’ve been a `zsh` user for some time now and `oh-my-zsh` has a ton of plugins that provide you with a ton of aliases but I’ve some of my aliases predate my `zsh` usage and some of the aliases provided just aren’t as short / intuitive as I’d like them to be.
 
-Here’s a few of my favorite `alias`es right now:
+Here’s a few of my favorite aliases right now:
 
 **Flush the `memcached` server:**
 
@@ -29,7 +29,7 @@ Here’s a few of my favorite `alias`es right now:
 		alias "$method"="lwp-request -m '$method'"
 	done
 
-You can check out all of my `alias`es in [my zshrc](https://github.com/joshtronic/dotfiles/blob/master/zsh/zshrc#L19-L149).
+You can check out all of my aliases in [my zshrc](https://github.com/joshtronic/dotfiles/blob/master/zsh/zshrc#L19-L149).
 
 ## The `hub` command
 
@@ -37,7 +37,7 @@ The `hub` command is a `ruby` `gem` for interfacing with GitHub. It’s actually
 
 	hub clone joshtronic/dotfiles
 
-BOOM! the `dotfiles` directory is created and everything is cloned into it. If nothing else it saves some keystrokes. I had written a `git` script to do something similar a while back and was happy to drop it from my `dotfiles`. I plan to explore the `hub` command more in the future as I read that `alias`ing `git` to `hub` is a pretty fantastic thing.
+BOOM! the `dotfiles` directory is created and everything is cloned into it. If nothing else it saves some keystrokes. I had written a `git` script to do something similar a while back and was happy to drop it from my `dotfiles`. I plan to explore the `hub` command more in the future as I read that aliasing `git` to `hub` is a pretty fantastic thing.
 
 You can find out everything about `hub` on the [official site](http://hub.github.com).
 
@@ -45,7 +45,7 @@ You can find out everything about `hub` on the [official site](http://hub.github
 
 I like `hub` but the only reason I discovered it is because I was on the hunt for a way to handle GitHub Issues from the command line. Turns out that `hub` doesn’t do that but another `gem` that does. `ghi` allows you to view your open issues, create new ones, and all of that good stuff right from the CLI!
 
-To make things even easier, I set up `alias`es for my common issue labels <span style="background:#009800;color:#fff;padding:4px 6px">Development</span>, <span style="background:#207de5;color:#fff;padding:4px 6px">Enhancement</span> and <span style="background:#e11d21;color:#fff;padding:4px 6px">Bug</span>. I generally stick to those 3 labels because that’s all I really need to organize and I only ever assign one label to an issue.
+To make things even easier, I set up aliases for my common issue labels <span style="background:#009800;color:#fff;padding:4px 6px">Development</span>, <span style="background:#207de5;color:#fff;padding:4px 6px">Enhancement</span> and <span style="background:#e11d21;color:#fff;padding:4px 6px">Bug</span>. I generally stick to those 3 labels because that’s all I really need to organize and I only ever assign one label to an issue.
 
 <span style="background:#009800;color:#fff;padding:4px 6px">Development</span> is anything brand new that needs to be built. <span style="background:#207de5;color:#fff;padding:4px 6px">Enhancement</span> is development against an existing piece of code. <span style="background:#e11d21;color:#fff;padding:4px 6px">Bug</span> well that should be obvious. I `alias` out `od`, `oe` and `ob` to show me open issues for each type and `nd`, `ne` and `nb` to open a new issue.
 
