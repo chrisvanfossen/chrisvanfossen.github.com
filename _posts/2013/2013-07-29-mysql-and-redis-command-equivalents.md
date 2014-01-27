@@ -87,8 +87,8 @@ That extra key we set when creating the records acts as an index by allowing us 
 ### Redis
 
 	$redis->hmset('user:3', 'username', 'elizabeth');
-	$redis->set('user:username:lizzy', 3);
-	$redis->del('user:username:elizabeth', 3);
+	$redis->del('user:username:lizzy');
+	$redis->set('user:username:elizabeth', 3);
 	$redis->zadd('users:updated_at', time(), 3);
 
 MySQL takes out the guess work by automatically updating the index on the `username` column but with Redis we have to be mindful of this change and issue the appropriate commands. We also added an item to a sorted set to track when the user last updated their information. We’ll circle back to pulling that data later in a bit, next up is deleting data.
