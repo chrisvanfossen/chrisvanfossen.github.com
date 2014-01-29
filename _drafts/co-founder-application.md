@@ -21,7 +21,7 @@ For the last year I have been working for myself building social networks. After
 * Memcached, because the fastest database queries are the ones you don’t run
 * Redis, because OMFG REDIS!!?!
 * nginx, because it’s bad like the PowerGlove
-* jQuery, because I have no room for botique libraries in my stack
+* jQuery, because I have no room for boutique libraries in my stack
 * Ubuntu Linux, even though I think Unity is junk
 * vim, because in another time and place it would have been called prophet
 
