@@ -3,7 +3,7 @@ layout: post
 title: Co-founder Application
 ---
 
-
+This is partially for LOLz and partially for serious. I’m a guy in Tampa looking for people that want to kick ass with me. I know some very talented individuals in the area but nothing’s really gotten off the ground with them. Most of that is because they have day jobs and can’t make the time or can’t get their focus going. So without further ado, my job posting for a co-founder:
 
 ## Entrepreneur seeks co-founders in Tampa, FL (No relocation / Local candidates only)
 
@@ -51,7 +51,7 @@ You have the experience to back up your claim. You’re humble, because everyone
 
 ### Benefits:
 
-Simply put, there are none at this time. You will be required to generate your own income until we figure this all out. Equity can be split equally or based on time commitments once a team has been assembled. If all goes well we’ll been doling out competitive salaries, gym memberships and generous healthcare packages when the time is right. If you’re approaching this with dollar signs in your eyes, save yourself some time and don’t apply.
+Simply put, there are none at this time. You will be required to generate your own income until we figure this all out. Equity can be split equally or based on time commitments once a team has been assembled. If all goes well we’ll been doling out competitive salaries, gym memberships and generous healthcare packages when the time is right. If you’re approaching this with dollar signs in your eyes or for some stuffy title, save yourself some time and don’t apply.
 
 ### Next Steps:
 
