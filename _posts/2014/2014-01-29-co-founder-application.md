@@ -25,7 +25,7 @@ For the last year I have been working for myself building social networks. After
 * Ubuntu Linux, even though I think Unity is junk
 * vim, because in another time and place it would have been called prophet
 
-#### About You:
+### About You:
 
 You’re a humble code monkey, designer and/or growth hacker. The ability to wear multiple hats is a very sexy attribute and you have it.
 
