@@ -32,6 +32,8 @@ a:hover
 
 article h1,
 article h2,
+article h3,
+article h4,
 article a,
 h2,
 .year h2,
@@ -120,6 +122,7 @@ header a:hover
 article h1,
 article h2,
 article h3,
+article h4,
 .close:after,
 time,
 .year h2,
@@ -214,7 +217,9 @@ article
 }
 
 article h1,
-article h2
+article h2,
+article h3,
+article h4
 {
 	color: #222;
 }
