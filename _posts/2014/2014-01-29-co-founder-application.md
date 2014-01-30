@@ -55,7 +55,7 @@ Simply put, there are none at this time. You will be required to generate your o
 
 ### Next Steps:
 
-An ideal candidates will likely be a freelancer that sets their own schedule. You must be willing to meet semi-regularly because some of the best collaboration happens in person, and usually after a few beers ;). As much as I believe that you shouldn’t limit your searches to a single market, I would like to find people that are local to the Tampa Bay area. I have office space in Ybor City on 7th Avenue with a big whiteboard for us to huddle around.
+An ideal candidate will likely be a freelancer that sets their own schedule. You must be willing to meet semi-regularly because some of the best collaboration happens in person, and usually after a few beers ;). As much as I believe that you shouldn’t limit your searches to a single market, I would like to find people that are local to the Tampa Bay area. I have office space in Ybor City on 7th Avenue with a big whiteboard for us to huddle around.
 
 If this sounds like something you’d be interested in, feel free to email me at <a href="mailto:joshtronic+cofounder@gmail.com">joshtronic+cofounder@gmail.com</a> or hit me up on Twitter: <a href="https://twitter.com/joshtronic">@joshtronic</a>. Links to what you’ve done are better than words about it, cover letter optional.
 
