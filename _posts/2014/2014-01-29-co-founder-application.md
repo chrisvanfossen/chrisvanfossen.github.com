@@ -7,7 +7,7 @@ This is partially for LOLz and partially for serious. I’m a guy in Tampa looki
 
 ## Entrepreneur seeks co-founders in Tampa, FL (No relocation / Local candidates only)
 
-I am seeking two or three qualified individuals to join me as co-founders for a yet to be determined venture. I have many ideas but we can use one of yours as long as everyone on the team is super excited about it. Coming up with an idea is going to be the easy part, execution is what really matters. “Push early, fail often.” “Ship or die.” “Move fast and break stuff.” And any other cliché quotes you can think of are great, but are up for the challenge of living them?
+I am seeking two or three qualified individuals to join me as co-founders for a yet to be determined venture. I have many ideas but we can use one of yours as long as everyone on the team is super excited about it. Coming up with an idea is going to be the easy part, execution is what really matters. “Push early, fail often.” “Ship or die.” “Move fast and break stuff.” And any other cliché quotes you can think of are great, but are you up for the challenge of living them?
 
 ### About Me:
 
@@ -57,6 +57,6 @@ Simply put, there are none at this time. You will be required to generate your o
 
 An ideal candidate will likely be a freelancer that sets their own schedule. You must be willing to meet semi-regularly because some of the best collaboration happens in person, and usually after a few beers ;). As much as I believe that you shouldn’t limit your searches to a single market, I would like to find people that are local to the Tampa Bay area. I have office space in Ybor City on 7th Avenue with a big whiteboard for us to huddle around.
 
-If this sounds like something you’d be interested in, feel free to email me at <a href="mailto:joshtronic+cofounder@gmail.com">joshtronic+cofounder@gmail.com</a> or hit me up on Twitter: <a href="https://twitter.com/joshtronic">@joshtronic</a>. Links to what you’ve done are better than words about it, cover letter optional.
+If this sounds like something you’d be interested in, feel free to email me at <a href="mailto:joshtronic+cofounder@gmail.com">joshtronic+cofounder@gmail.com</a> or hit me up on Twitter: <a href="https://twitter.com/joshtronic">@joshtronic</a>. Links to what you’ve done are better than words about it. Cover letter optional.
 
 Wantrepreneurs and Microsoft Windows users need not apply.
