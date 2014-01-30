@@ -31,7 +31,7 @@ You’re a humble code monkey, designer and/or growth hacker. The ability to wea
 
 #### You’re a developer
 
-You’re favorite thing in the world is to create. You always have at least one side project. When you’re not coding, you’re probably coding. You love writing unit tests but you love solving problems even more.
+Your favorite thing in the world is to create. You always have at least one side project. When you’re not coding, you’re probably coding. You love writing unit tests but you love solving problems even more.
 
 #### You’re a designer
 
@@ -51,10 +51,12 @@ You have the experience to back up your claim. You’re humble, because everyone
 
 ### Benefits:
 
-Simply put, there are none at this time. You will be required to generate your own income until we figure this all out. Equity can be split equally or based on time commitments once a team has been assembled. If all goes well we’ll been doling out competitive salaries, gym memberships and generous healthcare packages when the time is right. If you’re approaching this with dollar signs in your eyes or for some stuffy title, save yourself some time and don’t apply.
+Simply put, there are none at this time. You will be required to generate your own income until we figure this all out. Equity can be split equally or based on time commitments once a team has been assembled. If all goes well we’ll been doling out competitive salaries, gym memberships and generous healthcare packages when the time is right. If you’re approaching this with dollar signs in your eyes or looking for some stuffy C-level title, save yourself some time and don’t apply.
 
 ### Next Steps:
 
-Ideal candidates most likely will not have a full time job and will most likely be a freelancer that sets their own schedule. You must be willing to meet semi-regularly because some of the best collaboration happens in person, and usually after a few beers ;). As much as I believe that you shouldn’t limit your searches to a single market, I would like to find people that are local to the Tampa Bay area. I have office space in Ybor City on 7th Avenue with a big whiteboard for us to huddle around.
+An ideal candidates will likely be a freelancer that sets their own schedule. You must be willing to meet semi-regularly because some of the best collaboration happens in person, and usually after a few beers ;). As much as I believe that you shouldn’t limit your searches to a single market, I would like to find people that are local to the Tampa Bay area. I have office space in Ybor City on 7th Avenue with a big whiteboard for us to huddle around.
 
-If this sounds like something you’d be interested in, feel free to email me at <a href="mailto:joshtronic+cofounder@gmail.com">joshtronic+cofounder@gmail.com</a> or hit me up on Twitter: <a href="https://twitter.com/joshtronic">@joshtronic</a>.
+If this sounds like something you’d be interested in, feel free to email me at <a href="mailto:joshtronic+cofounder@gmail.com">joshtronic+cofounder@gmail.com</a> or hit me up on Twitter: <a href="https://twitter.com/joshtronic">@joshtronic</a>. Links to what you’ve done are better than words about it, cover letter optional.
+
+Wantrepreneurs and Microsoft Windows users need not apply.
