@@ -188,11 +188,6 @@ time
 	height: auto;
 }
 
-.year-active h2
-{
-	font-size: 35px;
-}
-
 .year-inactive h2
 {
 	opacity: 0.5;
@@ -380,14 +375,7 @@ footer p
 /* @media (min-width: 992px) */
 @media (min-width: 1025px)
 {
-	a,
-	header,
-	.header-container,
-	.years,
-	.year,
-	.year h2,
-	.year ul,
-	.year-nav
+	a
 	{
 		-webkit-transition: all .2s ease-in-out;
 		-moz-transition: all .2s ease-in-out;
@@ -397,17 +385,10 @@ footer p
 
 	html,
 	body,
-	.years,
-	.year,
 	.year h2,
 	.year-active ul
 	{
 		height: 100%;
-	}
-
-	body.home
-	{
-		overflow: hidden;
 	}
 
 	.header-container
@@ -415,56 +396,10 @@ footer p
 		text-align: left;
 	}
 
-	header,
-	.header-container
-	{
-		height: 214px;
-	}
-
-	.years
-	{
-		width: 100.01%;
-	}
-
-	.year
-	{
-		float: left;
-		width: 20%;
-	}
-
 	.year h2,
 	.year li
 	{
 		padding: 20px 50px;
-	}
-
-	.year-active
-	{
-		width: 36%;
-	}
-
-	.year-active h2
-	{
-		height: 83px;
-	}
-
-	.year-active ul
-	{
-		overflow-y: scroll;
-		padding-bottom: 93px;
-	}
-
-	.year-inactive
-	{
-		width: 16%;
-	}
-
-	.header-inactive,
-	.header-inactive .header-container
-	{
-		height: 10px;
-		position: relative;
-		z-index: -1;
 	}
 
 	.close:hover:after
@@ -474,48 +409,4 @@ footer p
 		left: -64px;
 		position: absolute;
 	}
-
-	.year-nav
-	{
-		bottom: -80px;
-		color: #fff;
-		cursor: pointer;
-		display: block;
-		font-size: 4em;
-		position: absolute;
-		text-align: center;
-	}
-
-	.year-nav-newer
-	{
-		left: 24px;
-	}
-
-	.year-nav-older
-	{
-		right: 24px;
-	}
-
-	.year-nav-visible
-	{
-		bottom: 10px;
-	}
-
-	.year-nav-newer.year-nav-disabled,
-	.year-nav-newer.year-nav-inactive
-	{
-		left: -80px;
-	}
-
-	.year-nav-older.year-nav-disabled,
-	.year-nav-older.year-nav-inactive
-	{
-		right: -80px;
-	}
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px)
-{
-
 }
