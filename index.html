@@ -11,9 +11,16 @@ title:  joshtronic
 		{% if year != current_year %}
 			{% if year != nil %}
 				</ul></div>
+				{% assign active = 'inactive' %}
+			{% else %}
+				{% assign active = 'active' %}
 			{% endif %}
 			<a name="{{ current_year }}"></a>
-			<div class="year year-{{ current_year }}" data-year="{{ current_year }}" data-index="{{ index }}">
+			<div
+				class="year year-{{ current_year }} year-{{ active }}"
+				data-year="{{ current_year }}"
+				data-index="{{ index }}"
+			>
 				<h2>{{ current_year }}</h2>
 				<ul class="posts-{{ current_year }}">
 			{% assign year = current_year %}
