@@ -1,0 +1,22 @@
+---
+layout: post
+title:  Linode is my favorite DNS hosting provider
+---
+
+There, I said it. Even though I’ve moved my day to day server needs to bare metal, I still keep a 1GB Linode instance spun up so that I can take advantage of what I consider to be one of the best DNS hosting providers out there. I know you’re probably wondering one of two thing, 1. why am I not running `bind` on my server and hosting my DNS myself or 2. Y U NO USE CLOUDFLARE?! Before I go on about why I love Linode’s DNS hosting let me address those burning questions.
+
+First, the reason I don’t run my own DNS is very simple. It’s not because I’m scared of configuring `bind` from the commandline or anything trivial like that, let’s not even try going there. It’s because I only run a single server these days and hosting my own DNS would leave me with no redundancy at all. I have ran this kind of setup in the past and for the most part it’s harmless enough. At this point in the game though, I favor having multiple nameservers to rely on. Linode provides 5 nameservers with their DNS hosting, more than any other DNS host I’ve tried.
+
+As for CloudFlare, I actually used them and absolutely fucking loved them. That love ceased after I noticed that my sites were running slower when using CloudFlare. I know they boast that they will speed up your site (and they did lower my bandwidth with their CDN), but the fact remains that my sites were lagging fairly regularly. I traced this lag back to a host that was consistently dropping packets using `mtr`. When I say consistently, I mean the host was always dropping about 20% of the traffic. I even reached out to Verizon that appeared as the owner and they were reluctant to do anything about it.
+
+The icing on my CloudFlare cake was during a fairly major outage / problem that caused my sites to slow to a crawl and my immediate disabling of their “features” in favor of direct traffic. Shortly there after I tried a few other DNS hosting services and ultimately landed back with Linode. You see, at the end of the day, my sites need to run as fast as possible and CloudFlare wasn’t giving me that. To their benefit, I was using the free plan, perhaps things would have been different if I was a paying customer (doubt it though).
+
+So why Linode’s DNS and not using my domain registrar or hosting company? It really boils down to the interface for me. Linode’s DNS manager is actually somewhat archaic, it’s basically editing zone files on the web with no fancy AJAX or anything like. Where it excels is that it’s fast and extremely straight forward. Having used their DNS since 2009 (up until that short stint with CloudFlare) I have found them to be exceptionally reliable and quite secure considering the safeguards already built into their manager (most notably IP whitelisting and two-factor authentication).
+
+Having recently given NameSilo’s DNS a shot, I found that they had some great features like canned zone files based on the type of site you were setting up. If you were setting up a domain to point to Tumblr (or some other service) you could spin up a template enter your domain name and it would generate the records needed for it. Unfortunately, I found the interface as a whole to be quite clunky and not up to my liking. Linode does have a way to clone existing zones and import zone files, but no zone templates. They did recent added a way to group zones which was one of those features that I never knew that I wanted until I had it.
+
+There are still some nice to haves that I’d like to see Linode’s DNS manager offer, but I’m content with everything as is and very happy to be off of CloudFlare. This whole migration from Linode to CloudFlare and back again actually was a pain in the ass because I had over 50 domains to transfer, but it was worth it now that I’m back home with Linode.
+
+Now that it’s all been said and done, I’m considering either developing a new interface leveraging the Linode API for DNS that would scratch my remaining itches or quite possibly build out a DNS hosting service that would be to my complete liking (freemium, perhaps?). Only issue with that is that I’m actually kind of scared of other people relying on me for DNS ;)
+
+If you’re interested in what I may have in store, hit me up ;) Also, if you found this post helpful and want to give Linode a shot either for hosting or just for their fantastic DNS, [please use my referral code](https://www.linode.com/?r=5f682793582e82ce686747c851b998dc1f86a55b)!
