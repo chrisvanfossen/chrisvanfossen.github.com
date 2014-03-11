@@ -56,7 +56,6 @@ header h1,
 .close,
 header a,
 header a:hover,
-.header-greeting,
 .year h2
 {
 	color: #fff;
@@ -91,9 +90,15 @@ footer,
 
 .header-greeting
 {
-	font-size: 80px;
+	color: #999;
+	font-size: 30px;
 	line-height: 1;
 	margin-bottom: 10px;
+}
+
+.header-greeting span
+{
+	color: #666;
 }
 
 .close:hover:after,
@@ -352,6 +357,11 @@ footer p
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px)
 {
+	.header-greeting
+	{
+		font-size: 80px;
+	}
+
 	article
 	{
 		padding: 100px 50px;
