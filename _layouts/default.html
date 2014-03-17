@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>{% if page.title != site.github %}{{ page.title }} by {% endif %}{{ site.name_full }}</title>
+		<title>{% if page.title != site.username %}{{ page.title }} by {% endif %}{{ site.name_full }}</title>
 		<meta charset="utf-8">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +13,9 @@
 		<link rel="stylesheet" type="text/css" href="/css/core.css?20140317">
 		<script src="//load.sumome.com/" data-sumo-site-id="b91d3454aee07f84a8f0f4cbc728e3a67d2ce584fc37810c93f7812328059a06" async></script>
 	</head>
-	{{ page.title }} - {{ site.github }}
-	<body{% if page.title == site.github %} class="home"{% endif %}>
-		{% if page.title == site.github %}
+	{{ page.title }} - {{ site.username }}
+	<body{% if page.title == site.username %} class="home"{% endif %}>
+		{% if page.title == site.username %}
 			<header>
 				<div class="header-container">
 					<h1>
