@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>{% if page.title != site.username %}{{ page.title }} by {% endif %}{{ site.name_full }}</title>
+		<title>{% if page.title != site.github.owner_name %}{{ page.title }} by {% endif %}{{ site.name_full }}</title>
 		<meta charset="utf-8">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +10,11 @@
 		<link rel="shortcut icon" href="{{ site.gravatar }}?s=16">
 		<link rel="alternate" type="application/atom+xml" href="http://feeds.feedblitz.com/joshtronic&x=1" title="{{ site.title }}: {{ site.description }}">
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merriweather:300,400,700">
-		<link rel="stylesheet" type="text/css" href="/css/core.css?20140317">
+		<link rel="stylesheet" type="text/css" href="/css/core.css?201403171414">
 		<script src="//load.sumome.com/" data-sumo-site-id="b91d3454aee07f84a8f0f4cbc728e3a67d2ce584fc37810c93f7812328059a06" async></script>
 	</head>
-	<body{% if page.title == site.username %} class="home"{% endif %}>
-		{% if page.title == site.username %}
+	<body{% if page.title == site.github.owner_name %} class="home"{% endif %}>
+		{% if page.title == site.github.owner_name %}
 			<header>
 				<div class="header-container">
 					<h1>
