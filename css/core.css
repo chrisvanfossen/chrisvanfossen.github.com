@@ -32,6 +32,11 @@ a:hover
 	background-color: #fff4cc;
 }
 
+.aticon:hover
+{
+	background-color: transparent;
+}
+
 article h1,
 article h2,
 article h3,
@@ -132,6 +137,7 @@ article h2,
 article h3,
 article h4,
 .close:after,
+address,
 time,
 .year h2,
 .year h3
@@ -176,6 +182,11 @@ time
 	color: #999;
 	font-size: 12px;
 	text-transform: uppercase;
+}
+
+time a
+{
+	font-weight: normal;
 }
 
 .year p
@@ -352,6 +363,11 @@ footer p
 .year-nav
 {
 	display: none;
+}
+
+.sumome-control
+{
+	display: none !important;
 }
 
 /* Small devices (tablets, 768px and up) */

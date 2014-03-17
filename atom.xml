@@ -20,7 +20,7 @@ layout: nil
 			<updated>{{ post.date | date_to_xmlschema }}</updated>
 			<id>{{ site.domain }}{{ post.id }}</id>
 			<summary>{{ post.content | strip_html | truncatewords: 50 | xml_escape }}</summary>
-			<content type="html">{{ post.content | xml_escape }}</content>
+			<content type="html">{{ post.content | truncatewords: 150 | xml_escape }}</content>
 		</entry>
 	{% endfor %}
 </feed>
