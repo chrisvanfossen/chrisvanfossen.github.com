@@ -5,7 +5,7 @@ title:  Opt-out responsive design using LESS
 
 I liked Chris Coyier’s post [Opt-Out Responsive Design?](http://css-tricks.com/user-opt-out-responsive-design/) but really didn’t like the idea of having to qualify all of my selectors with a parent class to indicate that we should be using the responsive version of the site. I do favor serving the user a single stylesheet instead of subjectively loading multiple files but behind the scenes, I don’t mind maintaining a couple of files. With the power of LESS I am able to provide a single stylesheet for mobile / responsive and one for the desktop / full version of a site without having to maintain a dedicated stylesheet for each.
 
-To accomplish this, I created two files, `mobile.less` and `desktop.less` to house my styles and two files that will be served directly to the user, `core-mobile.less` and core-desktop.less` that will `@import` the aforementioned files. The idea is that `mobile.less` will contain the base styles (thinking from a mobile-first perspective) and `desktop.less` will contain styles that would be referenced in a “large site” media query. Our “core” files look something like this:
+To accomplish this, I created two files, `mobile.less` and `desktop.less` to house my styles and two files that will be served directly to the user, `core-mobile.less` and `core-desktop.less` that will `@import` the aforementioned files. The idea is that `mobile.less` will contain the base styles (thinking from a mobile-first perspective) and `desktop.less` will contain styles that would be referenced in a “large site” media query. Our “core” files look something like this:
 
 ## core-mobile.less
 

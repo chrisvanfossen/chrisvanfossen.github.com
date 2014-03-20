@@ -1,4 +1,6 @@
-*, *:after, *:before
+*,
+*:after,
+*:before
 {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -30,6 +32,11 @@ a:hover
 	background-color: #fff4cc;
 }
 
+.aticon:hover
+{
+	background-color: transparent;
+}
+
 article h1,
 article h2,
 article h3,
@@ -54,7 +61,6 @@ header h1,
 .close,
 header a,
 header a:hover,
-.header-greeting,
 .year h2
 {
 	color: #fff;
@@ -89,9 +95,15 @@ footer,
 
 .header-greeting
 {
-	font-size: 80px;
+	color: #999;
+	font-size: 30px;
 	line-height: 1;
 	margin-bottom: 10px;
+}
+
+.header-greeting span
+{
+	color: #666;
 }
 
 .close:hover:after,
@@ -125,6 +137,7 @@ article h2,
 article h3,
 article h4,
 .close:after,
+address,
 time,
 .year h2,
 .year h3
@@ -167,8 +180,13 @@ time
 time
 {
 	color: #999;
-	font-size: 12px;
+	font-size: 14px;
 	text-transform: uppercase;
+}
+
+time a
+{
+	font-weight: normal;
 }
 
 .year p
@@ -347,9 +365,20 @@ footer p
 	display: none;
 }
 
+#sumotest-badge,
+.sumome-control
+{
+	display: none !important;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px)
 {
+	.header-greeting
+	{
+		font-size: 80px;
+	}
+
 	article
 	{
 		padding: 100px 50px;
@@ -414,8 +443,15 @@ footer p
 	.year ul li
 	{
 		float: left;
-		width: 33.3333333%;
+		width: 33.33333333333333%;
 		height: 350px;
 	}
+}
 
+@media (min-width: 2200px)
+{
+	.year ul li
+	{
+		width: 20%;
+	}
 }
