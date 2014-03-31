@@ -12,3 +12,5 @@ Back to troubleshooting, when I dumped `page.title` and `site.github` what I saw
 Fortunately, the change has actually helped me completely eliminate the variable I created in `_config.yml` as I can now compare `page.title` with `site.github.owner_name`. In doing so, my blog is a bit less “Josh-centric” and ripe for the forking! The downside is that when running `jekyll` locally, `site.github.owner_name` doesn’t exist. It’s a minor inconvenience for me as I generally only run `jekyll` locally when proofing a post or the occasional tweak to the layout, which is somewhat of a rare occurrance.
 
 I’m sure there are other ways to handle dynamic page titles and would love to hear about them, comment below!
+
+*Amendment 3/31/2014:* Evidently had a brainfart the day I was working on this. Seems I forgot that I set the title of the home page to my username (joshtronic) and that’s why I my sanity was the way it was. I’ve since changed the title on my home page to “home” and updated my check accordingly. Now everything is working locally and is also a bit more generic!

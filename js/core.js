@@ -46,14 +46,14 @@ equalheight = function(container)
 
 		if (currentRowStart != topPostion)
 		{
-			for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++)
+			for (currentDiv = 0; currentDiv < rowDivs.length; currentDiv++)
 			{
 				rowDivs[currentDiv].height(currentTallest);
 			}
 
-			rowDivs.length = 0; // empty the array
+			rowDivs.length  = 0; // empty the array
 			currentRowStart = topPostion;
-			currentTallest = $el.height();
+			currentTallest  = $el.height();
 			rowDivs.push($el);
 		}
 		else
@@ -62,7 +62,7 @@ equalheight = function(container)
 			currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
 		}
 
-		for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++)
+		for (currentDiv = 0; currentDiv < rowDivs.length; currentDiv++)
 		{
 			rowDivs[currentDiv].height(currentTallest);
 		}
@@ -71,11 +71,11 @@ equalheight = function(container)
 
 $(window).load(function()
 {
-  equalheight('.year ul li');
+	equalheight('.year ul li');
 });
 
 
 $(window).resize(function()
 {
-  equalheight('.year ul li');
+	equalheight('.year ul li');
 });
