@@ -1,0 +1,124 @@
+*,
+*:after,
+*:before
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body
+{
+	font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+	margin: 0 auto;
+}
+
+header
+{
+	padding: 20px;
+	margin-bottom: 80px;
+}
+
+article
+{
+	padding: 0 20px;
+}
+
+header div
+{
+	width: 100%;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+header div:first-child
+{
+	float: left;
+}
+
+header div:last-child
+{
+	float: right;
+}
+
+main
+{
+	clear: both;
+}
+
+section
+{
+	margin-top: 40px;
+}
+
+a
+{
+	color: #4a94db;
+	text-decoration: none;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+h1
+{
+	font-size: 2.4em;
+}
+
+h1,
+h3
+{
+	margin-bottom: 2px;
+	margin-top: 0;
+}
+
+time
+{
+	color: #666;
+	font-size: 0.9em;
+}
+
+header em
+{
+	font-size: 1.25em;
+}
+
+header a
+{
+	display: block;
+}
+
+h2
+{
+	background: #ddd;
+	border-color: #bbb;
+	border-style: solid;
+	border-width: 2px 0 1px;
+	padding: 20px;
+	text-shadow: 1px 1px 1px #fff;
+}
+
+@media (min-width: 992px)
+{
+	body
+	{
+		width: 990px;
+	}
+
+	header div
+	{
+		width: auto;
+	}
+
+	header div:first-child
+	{
+		text-align: left;
+	}
+
+	header div:last-child
+	{
+		text-align: right;
+	}
+}
