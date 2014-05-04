@@ -4,6 +4,6 @@ future:     true
 gravatar:   http://www.gravatar.com/avatar/31b5acfa9a74bf5be3c7944d26f9204d
 markdown:   rdiscount
 name_first: Chris
-name_full:  Chris VanFossen
+name_full:  Chris Van Fossen
 permalink:  pretty
 pygments:   true
