@@ -4,7 +4,7 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>{{ site.name_full }}</title>
-	<subtitle><![CDATA[My name is {{ site.name_full }} and I am a thirty something full stack hacker with a passion for building tools that bring people together. Husband, father and the Chief Alchemist &amp; Founder of Gravity Boulevard.]]></subtitle>
+	<subtitle><![CDATA[My name is {{ site.name_full }} and I am the product manager and the operations manager in charge of development and processes for a small market research start-up called MindSwarms. Always looking to grow, talk, learn, move, &amp; play.]]></subtitle>
 	<link href="{{ site.domain }}/atom.xml" rel="self" />
 	<link href="{{ site.domain }}" />
 	<updated>{{ site.time | date_to_xmlschema }}</updated>

@@ -1,6 +1,0 @@
----
-layout: post
-title:  “My Computer” hangs when accessing it
----
-
-This just started happening to my work PC (Windows XP SP3) about a week or so ago. It was very annoying, mainly because I rely heavily on the CTRL+E hotkey to access “My Computer” on the fly. Well today I had enough. First stop was Google. My searching resulted in many sites recommending to launch Explorer, go to Tools then Folder Options and click on the View tab. From there uncheck “Automatically search for network folders and printers” (the first option) and then click OK (or Apply then OK if you’re that guy). Yeah, no dice, still slow. Next step was to start disabling software and running services, I was sure Trend Micro OfficeScan or Apple were behind the hang ups. Still nothing. Well after another 20 seconds of waiting for “My Computer” to load, I decided to start going through my mapped drives to see if perhaps one of those was bad. Four mapped drives, the first three were fine. Then came number four. I double-clicked it and sure as shit, it hung for a moment, and then displayed an Explorer window showing my C:\ drive. Not a good sign. Well I disconnected the drive and tried CTRL+E. Surprise, everything is loading up as it should. Funny enough, I would have expected the option I unchecked to have possibly resolved the issue. Guess not, but now I’m back in business.

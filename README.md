@@ -1,11 +1,13 @@
-joshtronic.com
+chrisvanfossen.com
 ==============
 
-This repository is automatically transformed by Jekyll into a static site whenever I push it to GitHub.
+This repository is transformed by Jekyll into a static site when I push it to GitHub.
+
+Site design based off of Josh Sherman of Joshtronic.
 
 License
 -------
 
-The `_posts` and `images` directories are Copyright Josh Sherman and may not be used without my persmission.
+The `_posts` and `images` directories are Copyright Chris Van Fossen and may not be used without my permission.
 
-All other directories and files are MIT Licensed.
+All other directories and files are MIT-licensed.

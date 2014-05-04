@@ -1,9 +1,9 @@
-domain:     http://joshtronic.com
-email:      joshtronic@gmail.com
+domain:     http://chrisvanfossen.com
+email:      chris@chrisvanfossen.com
 future:     true
-gravatar:   http://www.gravatar.com/avatar/a8dc1f35af7e04617f9e20d1bb4ced62
+gravatar:   http://www.gravatar.com/avatar/31b5acfa9a74bf5be3c7944d26f9204d
 markdown:   rdiscount
-name_first: Josh
-name_full:  Josh Sherman
+name_first: Chris
+name_full:  Chris VanFossen
 permalink:  pretty
 pygments:   true
