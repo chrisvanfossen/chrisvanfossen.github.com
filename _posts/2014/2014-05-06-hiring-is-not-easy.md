@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Client Demands Come First
+title:  Hiring is Not Easy
 ---
 
 If you've ever worked in a small company, you've heard it before: making amazing hires is **essential** to the long-term health of the company. There's no real room for error in the HR department. I've made recommendations to use a particular product or service or platform that haven't worked out for the team; those types of mistakes are easily remedied with a better product, followed by a (maybe painful) migration, and then life goes on. But I haven't made a bad hire yet, and it's a bit terrifying to think of the consequences.
