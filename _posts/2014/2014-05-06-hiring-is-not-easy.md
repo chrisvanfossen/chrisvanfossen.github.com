@@ -17,6 +17,6 @@ The last part requires a bit of explanation and, for our company, it's just as i
 
 Also, it turns out that we're suckers for thank-you cards. We must've passed this one around the office a half-dozen times. "Oh my word... it's paper. Actual paper -- seriously, smell it!"
 
-![thank-you](/images/thank-you-card.jpeg)
+![thank-you](/images/thankyou-card.jpeg)
 
 You'll have to send an email to <mailto:chris@chrisvanfossen.com> if you want to know the punchline on the inside.
