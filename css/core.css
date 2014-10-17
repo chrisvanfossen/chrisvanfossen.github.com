@@ -367,6 +367,9 @@ footer p
 
 #sumotest-badge,
 .sumome-control
+{
+	display: !important;
+}
 
 
 /* Small devices (tablets, 768px and up) */
