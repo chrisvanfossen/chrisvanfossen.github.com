@@ -32,7 +32,7 @@ a:hover
 	background-color: #fff4cc;
 }
 
-.aticon:hover
+.action:hover
 {
 	background-color: transparent;
 }
@@ -368,7 +368,7 @@ footer p
 #sumotest-badge,
 .sumome-control
 {
-	display: none !important;
+	display:none !important;
 }
 
 table tr td,
