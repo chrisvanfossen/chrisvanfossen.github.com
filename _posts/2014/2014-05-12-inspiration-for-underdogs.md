@@ -3,13 +3,7 @@ layout: post
 title:  Inspiration for Underdogs
 ---
 
-Something got me thinking recently about the little guys, the Davids, and the underdogs. In April, you read about Vic Gundotra, head of Google+, announcing his departure from Google. Then you heard the news that Google is ending forced G+ integration. Cue sigh of relief from Internetizens. One bit of the story that wouldn't leave me was the number of cuts in division resources. The 1000-1200 employees working on Google+ are being moved to other divisions. 1200 employees.
-
-I'm getting to the inspiration part, I promise.
-
-I have read the stories about the Herculean task assigned to the engineering teams for the project known as "Emerald Sea." Creating such a technically challenging, socially based product in under 100 days is astonishing, even with the ~30 teams working on the project and the millions spent.
-
-Thinking about Google playing the catch-up game with a thousand employees, I wonder, "What could I do with a few hundred engineers working under my direction?" Or really, what *couldn't* I do?
+A simple question got me thinking recently about the little guys, the Davids, and the underdogs. The prompt: "What would I develop if I had a few hundred engineers working under my direction?" Or really, what *couldn't* I do?
 
 But a small startup won't have hundreds of engineers. It won't have millions (probably) to spend on products that aren't within its core competency.
 
