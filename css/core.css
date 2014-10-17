@@ -368,7 +368,7 @@ footer p
 #sumotest-badge,
 .sumome-control
 {
-	display: !important;
+	display: none !important;
 }
 
 
