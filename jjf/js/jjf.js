@@ -21,12 +21,12 @@ $(document).ready(function () {
 			// A setInterval instance used to call the rendering function
 			ticker = 0,
 			// Sets the speed of the image sliding animation
-			speedMultiplier = -10,
+			speedMultiplier = 10,
 			// CanvasLoader instance variable
 			spinner,
 	
 			// Stores the total amount of images we have in the sequence
-			totalFrames = 161,
+			totalFrames = 422,
 			// The current frame value of the image slider animation
 			currentFrame = 0,
 			// Stores all the loaded image objects
