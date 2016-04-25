@@ -3,9 +3,9 @@
 	It also sets its default dimensions and the overflowing hidden (to fix the IE image positioning bug).
 */
 #cat {
-	position: absolute;
-    top: 1600px;
-    left: 0;
+	position: relative;
+    top: 0;
+    right: 0;
     width: 100%;
     height: auto;
 }
@@ -25,6 +25,7 @@
 #cat img {
 	position:absolute;
 	/* This one fixes the IE positioning bug */
+	top:0;
 	width:100%;
 	height:auto;
 }
