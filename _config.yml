@@ -2,8 +2,8 @@ domain:     http://chrisvanfossen.com
 email:      chris@chrisvanfossen.com
 future:     true
 gravatar:   http://www.gravatar.com/avatar/31b5acfa9a74bf5be3c7944d26f9204d
-markdown:   rdiscount
+markdown:   kramdown
 name_first: Chris
 name_full:  Chris Van Fossen
 permalink:  pretty
-pygments:   true
+rouge:   true
