@@ -21,12 +21,12 @@ $(document).ready(function () {
 			// A setInterval instance used to call the rendering function
 			ticker = 0,
 			// Sets the speed of the image sliding animation
-			speedMultiplier = -10,
+			speedMultiplier = 10,
 			// CanvasLoader instance variable
 			spinner,
 	
 			// Stores the total amount of images we have in the sequence
-			totalFrames = 137,
+			totalFrames = 422,
 			// The current frame value of the image slider animation
 			currentFrame = 0,
 			// Stores all the loaded image objects
@@ -99,11 +99,7 @@ $(document).ready(function () {
 	* Each time this function is called it checks if all the images have been loaded or it has to load the next one.
 	* Every time a new image is succesfully loaded, we set the percentage value of the preloader to notify the user about the loading progress.
 	* If all the images are loaded, it hides the preloader using the jQuery "fadeOut" method, which on complete stops the preloader rendering
-<<<<<<< HEAD
 	* and calls the "showball" method, that displays the image slider.
-=======
-	* and calls the "showball" method, that displays the image slider.
->>>>>>> master
 	*/
 	function imageLoaded() {
 		// Increments the value of the "loadedImages" variable
@@ -116,19 +112,11 @@ $(document).ready(function () {
 			frames[0].removeClass("previous-image").addClass("current-image");
 			/*
 				Displays the image slider by using the jQuery "fadeOut" animation and its complete event handler.
-<<<<<<< HEAD
 				When the preloader is completely faded, it stops the preloader rendering and calls the "showball" function to display the images.
 			*/
 			$("#spinner").fadeOut("slow", function(){
 				spinner.hide();
 				showball();
-=======
-				When the preloader is completely faded, it stops the preloader rendering and calls the "showball" function to display the images.
-			*/
-			$("#spinner").fadeOut("slow", function(){
-				spinner.hide();
-				showball();
->>>>>>> master
 			});
 		} else {
 			// ...if not, Loads the next image in the sequence
@@ -141,11 +129,7 @@ $(document).ready(function () {
 	* As the endFrame is set to -720, the slider will take 4 complete spin before it stops.
 	* At this point it also sets the application to be ready for the user interaction.
 	*/
-<<<<<<< HEAD
 	function showball () {
-=======
-	function showball () {
->>>>>>> master
 		// Fades in the image slider by using the jQuery "fadeIn" method
 		$images.fadeIn("slow");
 		// Sets the "ready" variable to true, so the app now reacts to user interaction 
