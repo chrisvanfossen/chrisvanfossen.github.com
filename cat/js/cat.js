@@ -26,7 +26,7 @@ $(document).ready(function () {
 			spinner,
 	
 			// Stores the total amount of images we have in the sequence
-			totalFrames = 422,
+			totalFrames = 80,
 			// The current frame value of the image slider animation
 			currentFrame = 0,
 			// Stores all the loaded image objects
